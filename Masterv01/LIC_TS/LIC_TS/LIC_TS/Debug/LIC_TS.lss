@@ -1,0 +1,3871 @@
+
+LIC_TS.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000011e8  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .bss          000001ac  00800060  00800060  0000125c  2**0
+                  ALLOC
+  2 .comment      00000030  00000000  00000000  0000125c  2**0
+                  CONTENTS, READONLY
+  3 .debug_aranges 000001f8  00000000  00000000  0000128c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   00001c2a  00000000  00000000  00001484  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 00000879  00000000  00000000  000030ae  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   00000c84  00000000  00000000  00003927  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  0000047c  00000000  00000000  000045ac  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    000007cf  00000000  00000000  00004a28  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    00000f72  00000000  00000000  000051f7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000198  00000000  00000000  00006169  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	0c 94 d7 00 	jmp	0x1ae	; 0x1ae <__ctors_end>
+       4:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+       8:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+       c:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      10:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      14:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      18:	0c 94 f0 00 	jmp	0x1e0	; 0x1e0 <__vector_6>
+      1c:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      20:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      24:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      28:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      2c:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      30:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      34:	0c 94 20 07 	jmp	0xe40	; 0xe40 <__vector_13>
+      38:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      3c:	0c 94 4e 07 	jmp	0xe9c	; 0xe9c <__vector_15>
+      40:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      44:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      48:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      4c:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      50:	0c 94 e9 00 	jmp	0x1d2	; 0x1d2 <__bad_interrupt>
+      54:	85 02       	muls	r24, r21
+      56:	8f 02       	muls	r24, r31
+      58:	8f 02       	muls	r24, r31
+      5a:	8f 02       	muls	r24, r31
+      5c:	8f 02       	muls	r24, r31
+      5e:	8f 02       	muls	r24, r31
+      60:	8f 02       	muls	r24, r31
+      62:	8f 02       	muls	r24, r31
+      64:	30 02       	muls	r19, r16
+      66:	8f 02       	muls	r24, r31
+      68:	8f 02       	muls	r24, r31
+      6a:	8f 02       	muls	r24, r31
+      6c:	8f 02       	muls	r24, r31
+      6e:	8f 02       	muls	r24, r31
+      70:	8f 02       	muls	r24, r31
+      72:	8f 02       	muls	r24, r31
+      74:	30 02       	muls	r19, r16
+      76:	8f 02       	muls	r24, r31
+      78:	8f 02       	muls	r24, r31
+      7a:	8f 02       	muls	r24, r31
+      7c:	8f 02       	muls	r24, r31
+      7e:	8f 02       	muls	r24, r31
+      80:	8f 02       	muls	r24, r31
+      82:	8f 02       	muls	r24, r31
+      84:	8f 02       	muls	r24, r31
+      86:	8f 02       	muls	r24, r31
+      88:	8f 02       	muls	r24, r31
+      8a:	8f 02       	muls	r24, r31
+      8c:	8f 02       	muls	r24, r31
+      8e:	8f 02       	muls	r24, r31
+      90:	8f 02       	muls	r24, r31
+      92:	8f 02       	muls	r24, r31
+      94:	8f 02       	muls	r24, r31
+      96:	8f 02       	muls	r24, r31
+      98:	8f 02       	muls	r24, r31
+      9a:	8f 02       	muls	r24, r31
+      9c:	8f 02       	muls	r24, r31
+      9e:	8f 02       	muls	r24, r31
+      a0:	8f 02       	muls	r24, r31
+      a2:	8f 02       	muls	r24, r31
+      a4:	3e 02       	muls	r19, r30
+      a6:	8f 02       	muls	r24, r31
+      a8:	8f 02       	muls	r24, r31
+      aa:	8f 02       	muls	r24, r31
+      ac:	8f 02       	muls	r24, r31
+      ae:	8f 02       	muls	r24, r31
+      b0:	8f 02       	muls	r24, r31
+      b2:	8f 02       	muls	r24, r31
+      b4:	8f 02       	muls	r24, r31
+      b6:	8f 02       	muls	r24, r31
+      b8:	8f 02       	muls	r24, r31
+      ba:	8f 02       	muls	r24, r31
+      bc:	8f 02       	muls	r24, r31
+      be:	8f 02       	muls	r24, r31
+      c0:	8f 02       	muls	r24, r31
+      c2:	8f 02       	muls	r24, r31
+      c4:	45 02       	muls	r20, r21
+      c6:	8f 02       	muls	r24, r31
+      c8:	8f 02       	muls	r24, r31
+      ca:	8f 02       	muls	r24, r31
+      cc:	8f 02       	muls	r24, r31
+      ce:	8f 02       	muls	r24, r31
+      d0:	8f 02       	muls	r24, r31
+      d2:	8f 02       	muls	r24, r31
+      d4:	4c 02       	muls	r20, r28
+      d6:	8f 02       	muls	r24, r31
+      d8:	8f 02       	muls	r24, r31
+      da:	8f 02       	muls	r24, r31
+      dc:	8f 02       	muls	r24, r31
+      de:	8f 02       	muls	r24, r31
+      e0:	8f 02       	muls	r24, r31
+      e2:	8f 02       	muls	r24, r31
+      e4:	59 02       	muls	r21, r25
+      e6:	8f 02       	muls	r24, r31
+      e8:	8f 02       	muls	r24, r31
+      ea:	8f 02       	muls	r24, r31
+      ec:	8f 02       	muls	r24, r31
+      ee:	8f 02       	muls	r24, r31
+      f0:	8f 02       	muls	r24, r31
+      f2:	8f 02       	muls	r24, r31
+      f4:	60 02       	muls	r22, r16
+      f6:	8f 02       	muls	r24, r31
+      f8:	8f 02       	muls	r24, r31
+      fa:	8f 02       	muls	r24, r31
+      fc:	8f 02       	muls	r24, r31
+      fe:	8f 02       	muls	r24, r31
+     100:	8f 02       	muls	r24, r31
+     102:	8f 02       	muls	r24, r31
+     104:	7e 02       	muls	r23, r30
+     106:	fc 02       	muls	r31, r28
+     108:	06 03       	mulsu	r16, r22
+     10a:	06 03       	mulsu	r16, r22
+     10c:	06 03       	mulsu	r16, r22
+     10e:	06 03       	mulsu	r16, r22
+     110:	06 03       	mulsu	r16, r22
+     112:	06 03       	mulsu	r16, r22
+     114:	06 03       	mulsu	r16, r22
+     116:	ad 02       	muls	r26, r29
+     118:	06 03       	mulsu	r16, r22
+     11a:	06 03       	mulsu	r16, r22
+     11c:	06 03       	mulsu	r16, r22
+     11e:	06 03       	mulsu	r16, r22
+     120:	06 03       	mulsu	r16, r22
+     122:	06 03       	mulsu	r16, r22
+     124:	06 03       	mulsu	r16, r22
+     126:	ad 02       	muls	r26, r29
+     128:	06 03       	mulsu	r16, r22
+     12a:	06 03       	mulsu	r16, r22
+     12c:	06 03       	mulsu	r16, r22
+     12e:	06 03       	mulsu	r16, r22
+     130:	06 03       	mulsu	r16, r22
+     132:	06 03       	mulsu	r16, r22
+     134:	06 03       	mulsu	r16, r22
+     136:	ba 02       	muls	r27, r26
+     138:	06 03       	mulsu	r16, r22
+     13a:	06 03       	mulsu	r16, r22
+     13c:	06 03       	mulsu	r16, r22
+     13e:	06 03       	mulsu	r16, r22
+     140:	06 03       	mulsu	r16, r22
+     142:	06 03       	mulsu	r16, r22
+     144:	06 03       	mulsu	r16, r22
+     146:	ca 02       	muls	r28, r26
+     148:	06 03       	mulsu	r16, r22
+     14a:	06 03       	mulsu	r16, r22
+     14c:	06 03       	mulsu	r16, r22
+     14e:	06 03       	mulsu	r16, r22
+     150:	06 03       	mulsu	r16, r22
+     152:	06 03       	mulsu	r16, r22
+     154:	06 03       	mulsu	r16, r22
+     156:	d1 02       	muls	r29, r17
+     158:	06 03       	mulsu	r16, r22
+     15a:	06 03       	mulsu	r16, r22
+     15c:	06 03       	mulsu	r16, r22
+     15e:	06 03       	mulsu	r16, r22
+     160:	06 03       	mulsu	r16, r22
+     162:	06 03       	mulsu	r16, r22
+     164:	06 03       	mulsu	r16, r22
+     166:	ee 02       	muls	r30, r30
+     168:	06 03       	mulsu	r16, r22
+     16a:	06 03       	mulsu	r16, r22
+     16c:	06 03       	mulsu	r16, r22
+     16e:	06 03       	mulsu	r16, r22
+     170:	06 03       	mulsu	r16, r22
+     172:	06 03       	mulsu	r16, r22
+     174:	06 03       	mulsu	r16, r22
+     176:	ee 02       	muls	r30, r30
+     178:	06 03       	mulsu	r16, r22
+     17a:	06 03       	mulsu	r16, r22
+     17c:	06 03       	mulsu	r16, r22
+     17e:	06 03       	mulsu	r16, r22
+     180:	06 03       	mulsu	r16, r22
+     182:	06 03       	mulsu	r16, r22
+     184:	06 03       	mulsu	r16, r22
+     186:	06 03       	mulsu	r16, r22
+     188:	06 03       	mulsu	r16, r22
+     18a:	06 03       	mulsu	r16, r22
+     18c:	06 03       	mulsu	r16, r22
+     18e:	06 03       	mulsu	r16, r22
+     190:	06 03       	mulsu	r16, r22
+     192:	06 03       	mulsu	r16, r22
+     194:	06 03       	mulsu	r16, r22
+     196:	f5 02       	muls	r31, r21
+     198:	91 08       	sbc	r9, r1
+     19a:	94 08       	sbc	r9, r4
+     19c:	97 08       	sbc	r9, r7
+     19e:	9a 08       	sbc	r9, r10
+     1a0:	9d 08       	sbc	r9, r13
+     1a2:	a0 08       	sbc	r10, r0
+     1a4:	a3 08       	sbc	r10, r3
+     1a6:	a6 08       	sbc	r10, r6
+     1a8:	a9 08       	sbc	r10, r9
+     1aa:	ac 08       	sbc	r10, r12
+     1ac:	af 08       	sbc	r10, r15
+
+000001ae <__ctors_end>:
+     1ae:	11 24       	eor	r1, r1
+     1b0:	1f be       	out	0x3f, r1	; 63
+     1b2:	cf e5       	ldi	r28, 0x5F	; 95
+     1b4:	d8 e0       	ldi	r29, 0x08	; 8
+     1b6:	de bf       	out	0x3e, r29	; 62
+     1b8:	cd bf       	out	0x3d, r28	; 61
+
+000001ba <__do_clear_bss>:
+     1ba:	22 e0       	ldi	r18, 0x02	; 2
+     1bc:	a0 e6       	ldi	r26, 0x60	; 96
+     1be:	b0 e0       	ldi	r27, 0x00	; 0
+     1c0:	01 c0       	rjmp	.+2      	; 0x1c4 <.do_clear_bss_start>
+
+000001c2 <.do_clear_bss_loop>:
+     1c2:	1d 92       	st	X+, r1
+
+000001c4 <.do_clear_bss_start>:
+     1c4:	ac 30       	cpi	r26, 0x0C	; 12
+     1c6:	b2 07       	cpc	r27, r18
+     1c8:	e1 f7       	brne	.-8      	; 0x1c2 <.do_clear_bss_loop>
+     1ca:	0e 94 bd 01 	call	0x37a	; 0x37a <main>
+     1ce:	0c 94 f2 08 	jmp	0x11e4	; 0x11e4 <_exit>
+
+000001d2 <__bad_interrupt>:
+     1d2:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000001d6 <send_data>:
+extern uint8_t recv[16]; //buffer to store received bytes
+
+
+void send_data(void)
+{
+	uart0_put_data((byte *) &TB_bufOut);
+     1d6:	87 eb       	ldi	r24, 0xB7	; 183
+     1d8:	90 e0       	ldi	r25, 0x00	; 0
+     1da:	0e 94 5d 08 	call	0x10ba	; 0x10ba <uart0_put_data>
+     1de:	08 95       	ret
+
+000001e0 <__vector_6>:
+}
+
+//----------------------------------------------------------
+ISR(TIMER1_CAPT_vect) {
+     1e0:	1f 92       	push	r1
+     1e2:	0f 92       	push	r0
+     1e4:	0f b6       	in	r0, 0x3f	; 63
+     1e6:	0f 92       	push	r0
+     1e8:	11 24       	eor	r1, r1
+     1ea:	8f 93       	push	r24
+	// T = 10ms
+	timer0_flag = true;
+     1ec:	81 e0       	ldi	r24, 0x01	; 1
+     1ee:	80 93 73 00 	sts	0x0073, r24
+}
+     1f2:	8f 91       	pop	r24
+     1f4:	0f 90       	pop	r0
+     1f6:	0f be       	out	0x3f, r0	; 63
+     1f8:	0f 90       	pop	r0
+     1fa:	1f 90       	pop	r1
+     1fc:	18 95       	reti
+
+000001fe <process_timer_100Hz>:
+
+//----------------------------------------------------------
+void process_timer_100Hz(void)
+{
+	if (timer0_flag) { // T = 10ms
+     1fe:	80 91 73 00 	lds	r24, 0x0073
+     202:	88 23       	and	r24, r24
+     204:	89 f0       	breq	.+34     	; 0x228 <process_timer_100Hz+0x2a>
+		timer0_flag = false;
+     206:	10 92 73 00 	sts	0x0073, r1
+		uart0_ISR_timer();
+     20a:	0e 94 21 08 	call	0x1042	; 0x1042 <uart0_ISR_timer>
+		if (led_timer > 0) {
+     20e:	80 91 72 00 	lds	r24, 0x0072
+     212:	88 23       	and	r24, r24
+     214:	49 f0       	breq	.+18     	; 0x228 <process_timer_100Hz+0x2a>
+			led_timer--;
+     216:	81 50       	subi	r24, 0x01	; 1
+     218:	80 93 72 00 	sts	0x0072, r24
+			if (led_timer == 0) {
+     21c:	81 11       	cpse	r24, r1
+     21e:	04 c0       	rjmp	.+8      	; 0x228 <process_timer_100Hz+0x2a>
+				PORTB ^= (1 << PB4);
+     220:	98 b3       	in	r25, 0x18	; 24
+     222:	80 e1       	ldi	r24, 0x10	; 16
+     224:	89 27       	eor	r24, r25
+     226:	88 bb       	out	0x18, r24	; 24
+     228:	08 95       	ret
+
+0000022a <try_receive_data>:
+		}
+	}
+}
+
+void try_receive_data(void)
+{
+     22a:	cf 93       	push	r28
+     22c:	df 93       	push	r29
+	byte i;
+	byte *ptr;
+	
+	if (uart0_flags.data_received) {
+     22e:	80 91 7b 00 	lds	r24, 0x007B
+     232:	83 ff       	sbrs	r24, 3
+     234:	9f c0       	rjmp	.+318    	; 0x374 <try_receive_data+0x14a>
+		ptr = uart0_get_data_begin();
+     236:	0e 94 39 08 	call	0x1072	; 0x1072 <uart0_get_data_begin>
+     23a:	dc 01       	movw	r26, r24
+     23c:	e7 ec       	ldi	r30, 0xC7	; 199
+     23e:	f0 e0       	ldi	r31, 0x00	; 0
+     240:	80 ed       	ldi	r24, 0xD0	; 208
+     242:	90 e0       	ldi	r25, 0x00	; 0
+		for (i=0; i<9; i++) {
+			TB_bufIn[i] = *ptr;
+     244:	2d 91       	ld	r18, X+
+     246:	21 93       	st	Z+, r18
+	byte i;
+	byte *ptr;
+	
+	if (uart0_flags.data_received) {
+		ptr = uart0_get_data_begin();
+		for (i=0; i<9; i++) {
+     248:	e8 17       	cp	r30, r24
+     24a:	f9 07       	cpc	r31, r25
+     24c:	d9 f7       	brne	.-10     	; 0x244 <try_receive_data+0x1a>
+			TB_bufIn[i] = *ptr;
+			ptr++;
+		}
+		uart0_get_data_end();
+     24e:	0e 94 4a 08 	call	0x1094	; 0x1094 <uart0_get_data_end>
+		uart0_flags.data_received = FALSE;
+     252:	80 91 7b 00 	lds	r24, 0x007B
+     256:	87 7f       	andi	r24, 0xF7	; 247
+     258:	80 93 7b 00 	sts	0x007B, r24
+		if (TB_Read() == 0) {
+     25c:	0e 94 8a 03 	call	0x714	; 0x714 <TB_Read>
+     260:	81 11       	cpse	r24, r1
+     262:	88 c0       	rjmp	.+272    	; 0x374 <try_receive_data+0x14a>
+			switch (TB_Decode())
+     264:	0e 94 aa 03 	call	0x754	; 0x754 <TB_Decode>
+     268:	8e 30       	cpi	r24, 0x0E	; 14
+     26a:	19 f0       	breq	.+6      	; 0x272 <try_receive_data+0x48>
+     26c:	80 31       	cpi	r24, 0x10	; 16
+     26e:	61 f1       	breq	.+88     	; 0x2c8 <try_receive_data+0x9e>
+     270:	81 c0       	rjmp	.+258    	; 0x374 <try_receive_data+0x14a>
+			{
+				case TB_CMD_SIO:
+					if(TB_bufIn[TB_BUF_MOTOR] == 2) // Elektromagnetický ventil è.1
+     272:	80 91 ca 00 	lds	r24, 0x00CA
+     276:	82 30       	cpi	r24, 0x02	; 2
+     278:	09 f0       	breq	.+2      	; 0x27c <try_receive_data+0x52>
+     27a:	7c c0       	rjmp	.+248    	; 0x374 <try_receive_data+0x14a>
+					{
+						switch (TB_bufIn[TB_BUF_TYPE])
+     27c:	80 91 c9 00 	lds	r24, 0x00C9
+     280:	81 30       	cpi	r24, 0x01	; 1
+     282:	71 f0       	breq	.+28     	; 0x2a0 <try_receive_data+0x76>
+     284:	18 f0       	brcs	.+6      	; 0x28c <try_receive_data+0x62>
+     286:	82 30       	cpi	r24, 0x02	; 2
+     288:	a9 f0       	breq	.+42     	; 0x2b4 <try_receive_data+0x8a>
+     28a:	74 c0       	rjmp	.+232    	; 0x374 <try_receive_data+0x14a>
+						{
+						case 0:
+							//Nastaveni Elektromagnetického ventilu è.1
+							if (TB_out.b0 != 0)
+     28c:	80 91 95 00 	lds	r24, 0x0095
+     290:	80 ff       	sbrs	r24, 0
+     292:	03 c0       	rjmp	.+6      	; 0x29a <try_receive_data+0x70>
+							{
+								EM_MAG1_ON();
+     294:	0e 94 e9 01 	call	0x3d2	; 0x3d2 <EM_MAG1_ON>
+     298:	6d c0       	rjmp	.+218    	; 0x374 <try_receive_data+0x14a>
+							} 
+							else
+							{
+								EM_MAG1_OFF();
+     29a:	0e 94 ed 01 	call	0x3da	; 0x3da <EM_MAG1_OFF>
+     29e:	6a c0       	rjmp	.+212    	; 0x374 <try_receive_data+0x14a>
+							}
+							break;
+						case 1:	
+							//Nastaveni Elektromagnetického ventilu è.2
+							if (TB_out.b1 != 0)
+     2a0:	80 91 95 00 	lds	r24, 0x0095
+     2a4:	81 ff       	sbrs	r24, 1
+     2a6:	03 c0       	rjmp	.+6      	; 0x2ae <try_receive_data+0x84>
+							{
+								EM_MAG2_ON();
+     2a8:	0e 94 f1 01 	call	0x3e2	; 0x3e2 <EM_MAG2_ON>
+     2ac:	63 c0       	rjmp	.+198    	; 0x374 <try_receive_data+0x14a>
+							}
+							else
+							{
+								EM_MAG2_OFF();
+     2ae:	0e 94 f5 01 	call	0x3ea	; 0x3ea <EM_MAG2_OFF>
+     2b2:	60 c0       	rjmp	.+192    	; 0x374 <try_receive_data+0x14a>
+							}
+							break;
+						case 2:
+							//Nastaveni Rotaèní vyveva
+							if (TB_out.b2 != 0)
+     2b4:	80 91 95 00 	lds	r24, 0x0095
+     2b8:	82 ff       	sbrs	r24, 2
+     2ba:	03 c0       	rjmp	.+6      	; 0x2c2 <try_receive_data+0x98>
+							{
+								RV_ON();
+     2bc:	0e 94 f9 01 	call	0x3f2	; 0x3f2 <RV_ON>
+     2c0:	59 c0       	rjmp	.+178    	; 0x374 <try_receive_data+0x14a>
+							}
+							else
+							{
+								RV_OFF();
+     2c2:	0e 94 fd 01 	call	0x3fa	; 0x3fa <RV_OFF>
+     2c6:	56 c0       	rjmp	.+172    	; 0x374 <try_receive_data+0x14a>
+					}
+					return;
+				
+				case TB_CMD_VENTIL:
+					//Set point
+						Tx_Pole[0] = TB_bufIn[TB_BUF_TYPE]; // MSB // Poslaní pøíkazu pro SET POINT/Measurament/FullClose/FullOpen
+     2c8:	80 91 c9 00 	lds	r24, 0x00C9
+     2cc:	80 93 62 00 	sts	0x0062, r24
+						Tx_Pole[1] = (uint8_t) TB_bufIn[6];
+     2d0:	80 91 cd 00 	lds	r24, 0x00CD
+     2d4:	80 93 63 00 	sts	0x0063, r24
+						Tx_Pole[2] = (uint8_t) TB_bufIn[7]; // LSB
+     2d8:	80 91 ce 00 	lds	r24, 0x00CE
+     2dc:	80 93 64 00 	sts	0x0064, r24
+						Tx_Pole[15] = 0xFF;
+     2e0:	8f ef       	ldi	r24, 0xFF	; 255
+     2e2:	80 93 71 00 	sts	0x0071, r24
+						
+						//Komunikace po sériové lince Transmiter
+						I2C_Start();
+     2e6:	0e 94 12 02 	call	0x424	; 0x424 <I2C_Start>
+						//Odeslání dat po I2C do slave podle bufferu kterému chcee co poslat.
+						while(((Vraceno = handleI2C_Transmit(Tx_Pole, TB_bufIn[TB_BUF_MOTOR])) == 0))
+     2ea:	ca ec       	ldi	r28, 0xCA	; 202
+     2ec:	d0 e0       	ldi	r29, 0x00	; 0
+     2ee:	68 81       	ld	r22, Y
+     2f0:	82 e6       	ldi	r24, 0x62	; 98
+     2f2:	90 e0       	ldi	r25, 0x00	; 0
+     2f4:	0e 94 97 02 	call	0x52e	; 0x52e <handleI2C_Transmit>
+     2f8:	90 93 61 00 	sts	0x0061, r25
+     2fc:	80 93 60 00 	sts	0x0060, r24
+     300:	89 2b       	or	r24, r25
+     302:	a9 f3       	breq	.-22     	; 0x2ee <try_receive_data+0xc4>
+							default:
+								TB_SendAck(TB_NOT_KNOW, 0);
+							break;
+						}
+						*/
+						I2C_Stop();
+     304:	0e 94 17 02 	call	0x42e	; 0x42e <I2C_Stop>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+     308:	2f ef       	ldi	r18, 0xFF	; 255
+     30a:	8f ef       	ldi	r24, 0xFF	; 255
+     30c:	9c e2       	ldi	r25, 0x2C	; 44
+     30e:	21 50       	subi	r18, 0x01	; 1
+     310:	80 40       	sbci	r24, 0x00	; 0
+     312:	90 40       	sbci	r25, 0x00	; 0
+     314:	e1 f7       	brne	.-8      	; 0x30e <try_receive_data+0xe4>
+     316:	00 c0       	rjmp	.+0      	; 0x318 <try_receive_data+0xee>
+     318:	00 00       	nop
+						
+						_delay_ms(1000);
+						//Komunikace po sériové lince Transmiter
+						
+						I2C_Start();
+     31a:	0e 94 12 02 	call	0x424	; 0x424 <I2C_Start>
+						//Odeslání dat po I2C do slave podle bufferu kterému chcee co poslat.
+						while(((Vraceno = handleI2C_Receive(TB_bufIn[TB_BUF_MOTOR])) == 0))
+     31e:	ca ec       	ldi	r28, 0xCA	; 202
+     320:	d0 e0       	ldi	r29, 0x00	; 0
+     322:	88 81       	ld	r24, Y
+     324:	0e 94 1c 02 	call	0x438	; 0x438 <handleI2C_Receive>
+     328:	90 93 61 00 	sts	0x0061, r25
+     32c:	80 93 60 00 	sts	0x0060, r24
+     330:	00 97       	sbiw	r24, 0x00	; 0
+     332:	b9 f3       	breq	.-18     	; 0x322 <try_receive_data+0xf8>
+						Hodnota +=  recv[1];
+						Hodnota <<= 8;
+						Hodnota +=  recv[2];
+						Hodnota <<= 8;
+						Hodnota +=  recv[3];
+						switch(Vraceno)
+     334:	81 30       	cpi	r24, 0x01	; 1
+     336:	91 05       	cpc	r25, r1
+     338:	19 f0       	breq	.+6      	; 0x340 <try_receive_data+0x116>
+     33a:	02 97       	sbiw	r24, 0x02	; 2
+     33c:	51 f0       	breq	.+20     	; 0x352 <try_receive_data+0x128>
+     33e:	12 c0       	rjmp	.+36     	; 0x364 <try_receive_data+0x13a>
+						{
+							case 1:
+								TB_SendAck(TB_I2C_REC_OK, recv[1]);
+     340:	40 91 86 00 	lds	r20, 0x0086
+     344:	50 e0       	ldi	r21, 0x00	; 0
+     346:	60 e0       	ldi	r22, 0x00	; 0
+     348:	70 e0       	ldi	r23, 0x00	; 0
+     34a:	8a e0       	ldi	r24, 0x0A	; 10
+     34c:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+								break;
+     350:	0f c0       	rjmp	.+30     	; 0x370 <try_receive_data+0x146>
+							case 2:
+								TB_SendAck(TB_I2C_SLAVE_NOT_RESPOND, TB_bufIn[TB_BUF_MOTOR]);
+     352:	40 91 ca 00 	lds	r20, 0x00CA
+     356:	50 e0       	ldi	r21, 0x00	; 0
+     358:	60 e0       	ldi	r22, 0x00	; 0
+     35a:	70 e0       	ldi	r23, 0x00	; 0
+     35c:	88 e0       	ldi	r24, 0x08	; 8
+     35e:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+							break;
+     362:	06 c0       	rjmp	.+12     	; 0x370 <try_receive_data+0x146>
+								default:
+								TB_SendAck(TB_NOT_KNOW, 0);
+     364:	40 e0       	ldi	r20, 0x00	; 0
+     366:	50 e0       	ldi	r21, 0x00	; 0
+     368:	ba 01       	movw	r22, r20
+     36a:	89 e0       	ldi	r24, 0x09	; 9
+     36c:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+							break;
+						}
+						I2C_Stop();
+     370:	0e 94 17 02 	call	0x42e	; 0x42e <I2C_Stop>
+					}
+					return;
+				
+			}
+		}
+}
+     374:	df 91       	pop	r29
+     376:	cf 91       	pop	r28
+     378:	08 95       	ret
+
+0000037a <main>:
+
+int main(void)
+{
+	DDRA |= (1 << DDA7) | (1 << DDA6) | (1 << DDA5) | (1 << DDA4) | (1 << DDA3) | (1 << DDA2) | (1 << DDA1);
+     37a:	8a b3       	in	r24, 0x1a	; 26
+     37c:	8e 6f       	ori	r24, 0xFE	; 254
+     37e:	8a bb       	out	0x1a, r24	; 26
+	DDRB |= (1 << DDB4) | (1 << DDB3);
+     380:	87 b3       	in	r24, 0x17	; 23
+     382:	88 61       	ori	r24, 0x18	; 24
+     384:	87 bb       	out	0x17, r24	; 23
+	DDRC |= (1 << DDC7) | (1 << DDC6) | (1 << DDC5) | (1 << DDC4);
+     386:	84 b3       	in	r24, 0x14	; 20
+     388:	80 6f       	ori	r24, 0xF0	; 240
+     38a:	84 bb       	out	0x14, r24	; 20
+	DDRD |= (1 << DDD4) | (1 << DDD3) | (1 << DDD2);
+     38c:	81 b3       	in	r24, 0x11	; 17
+     38e:	8c 61       	ori	r24, 0x1C	; 28
+     390:	81 bb       	out	0x11, r24	; 17
+	//DDRD = 0b00011110;
+	
+	
+	//RS232_Init(RS232_9600);
+	
+	I2C_Init();
+     392:	0e 94 0d 02 	call	0x41a	; 0x41a <I2C_Init>
+	
+	timer_init();
+     396:	0e 94 0f 03 	call	0x61e	; 0x61e <timer_init>
+	uart0_init();
+     39a:	0e 94 82 07 	call	0xf04	; 0xf04 <uart0_init>
+	TB_Callback_setBaud = &uart0_set_baud;
+     39e:	88 e8       	ldi	r24, 0x88	; 136
+     3a0:	98 e0       	ldi	r25, 0x08	; 8
+     3a2:	90 93 77 00 	sts	0x0077, r25
+     3a6:	80 93 76 00 	sts	0x0076, r24
+	TB_Callback_TX = &send_data;
+     3aa:	8b ee       	ldi	r24, 0xEB	; 235
+     3ac:	90 e0       	ldi	r25, 0x00	; 0
+     3ae:	90 93 79 00 	sts	0x0079, r25
+     3b2:	80 93 78 00 	sts	0x0078, r24
+	TB_Init((void*) 0x10); // addr in eeprom with settings
+     3b6:	80 e1       	ldi	r24, 0x10	; 16
+     3b8:	90 e0       	ldi	r25, 0x00	; 0
+     3ba:	0e 94 34 03 	call	0x668	; 0x668 <TB_Init>
+	
+	//Zapnutí led diody pro indikaci zapnutí desky
+	LED_Supply();
+     3be:	0e 94 01 02 	call	0x402	; 0x402 <LED_Supply>
+	
+	sei();
+     3c2:	78 94       	sei
+    while(1)
+    {
+		//RS232_Transmit_Char(0x01);
+		//handleI2C_master();
+		
+		process_timer_100Hz();
+     3c4:	0e 94 ff 00 	call	0x1fe	; 0x1fe <process_timer_100Hz>
+		uart0_process();
+     3c8:	0e 94 90 07 	call	0xf20	; 0xf20 <uart0_process>
+		try_receive_data();
+     3cc:	0e 94 15 01 	call	0x22a	; 0x22a <try_receive_data>
+     3d0:	f9 cf       	rjmp	.-14     	; 0x3c4 <main+0x4a>
+
+000003d2 <EM_MAG1_ON>:
+#include "EL_MAG.h"
+
+
+void EM_MAG1_ON(void)
+{
+	PORTA |= (1 << EM_MAG1_OVL);
+     3d2:	df 9a       	sbi	0x1b, 7	; 27
+	PORTA &= ~(1 << EM_MAG1_RED);
+     3d4:	db 98       	cbi	0x1b, 3	; 27
+	PORTA |= (1 << EM_MAG1_GREEN);
+     3d6:	da 9a       	sbi	0x1b, 2	; 27
+     3d8:	08 95       	ret
+
+000003da <EM_MAG1_OFF>:
+}
+
+void EM_MAG1_OFF(void)
+{
+	PORTA &= ~(1 << EM_MAG1_OVL);
+     3da:	df 98       	cbi	0x1b, 7	; 27
+	PORTA |= (1 << EM_MAG1_RED);
+     3dc:	db 9a       	sbi	0x1b, 3	; 27
+	PORTA &= ~(1 << EM_MAG1_GREEN);
+     3de:	da 98       	cbi	0x1b, 2	; 27
+     3e0:	08 95       	ret
+
+000003e2 <EM_MAG2_ON>:
+}
+
+void EM_MAG2_ON(void)
+{
+	PORTA |= (1 << EM_MAG2_OVL);
+     3e2:	de 9a       	sbi	0x1b, 6	; 27
+	PORTA &= ~(1 << EM_MAG2_RED);
+     3e4:	dd 98       	cbi	0x1b, 5	; 27
+	PORTA |= (1 << EM_MAG2_GREEN);
+     3e6:	dc 9a       	sbi	0x1b, 4	; 27
+     3e8:	08 95       	ret
+
+000003ea <EM_MAG2_OFF>:
+}
+
+void EM_MAG2_OFF(void)
+{
+	PORTA &= ~(1 << EM_MAG2_OVL);
+     3ea:	de 98       	cbi	0x1b, 6	; 27
+	PORTA |= (1 << EM_MAG2_RED);
+     3ec:	dd 9a       	sbi	0x1b, 5	; 27
+	PORTA &= ~(1 << EM_MAG2_GREEN);
+     3ee:	dc 98       	cbi	0x1b, 4	; 27
+     3f0:	08 95       	ret
+
+000003f2 <RV_ON>:
+}
+
+void RV_ON(void)
+{
+	PORTA |= (1 << ROT_VYVEV_OVL);
+     3f2:	d9 9a       	sbi	0x1b, 1	; 27
+	PORTD |= (1 << ROT_VYVEV_GREEN);
+     3f4:	94 9a       	sbi	0x12, 4	; 18
+	PORTD &= ~(1 << ROT_VYVEV_RED);
+     3f6:	93 98       	cbi	0x12, 3	; 18
+     3f8:	08 95       	ret
+
+000003fa <RV_OFF>:
+}
+
+void RV_OFF(void)
+{
+	PORTA &= ~(1 << ROT_VYVEV_OVL);
+     3fa:	d9 98       	cbi	0x1b, 1	; 27
+	PORTD |= (1 << ROT_VYVEV_RED);
+     3fc:	93 9a       	sbi	0x12, 3	; 18
+	PORTD &= ~(1 << ROT_VYVEV_GREEN);
+     3fe:	94 98       	cbi	0x12, 4	; 18
+     400:	08 95       	ret
+
+00000402 <LED_Supply>:
+}
+*/
+
+void LED_Supply(void)
+{
+	PORTB |= (1 << LED_SUPPLY_ON);
+     402:	c3 9a       	sbi	0x18, 3	; 24
+	EM_MAG1_OFF();
+     404:	0e 94 ed 01 	call	0x3da	; 0x3da <EM_MAG1_OFF>
+	EM_MAG2_OFF();
+     408:	0e 94 f5 01 	call	0x3ea	; 0x3ea <EM_MAG2_OFF>
+	RV_OFF();
+     40c:	0e 94 fd 01 	call	0x3fa	; 0x3fa <RV_OFF>
+     410:	08 95       	ret
+
+00000412 <LED_RT_On>:
+	//PORTD |= (1 << ROT_VYVEV_RED);
+}
+
+void LED_RT_On(void)
+{
+	PORTB |= (1 << PB4);
+     412:	c4 9a       	sbi	0x18, 4	; 24
+     414:	08 95       	ret
+
+00000416 <LED_RT_Off>:
+}
+
+void LED_RT_Off(void)
+{
+	PORTB &= ~(1 << PB4);
+     416:	c4 98       	cbi	0x18, 4	; 24
+     418:	08 95       	ret
+
+0000041a <I2C_Init>:
+uint8_t reset=0;
+
+
+void I2C_Init()
+{
+	TWBR = 0x0A;
+     41a:	8a e0       	ldi	r24, 0x0A	; 10
+     41c:	80 b9       	out	0x00, r24	; 0
+	TWCR = (1 << TWEN) | (1 << TWEA);
+     41e:	84 e4       	ldi	r24, 0x44	; 68
+     420:	86 bf       	out	0x36, r24	; 54
+     422:	08 95       	ret
+
+00000424 <I2C_Start>:
+}
+
+void I2C_Start()
+{
+	TWSTART;
+     424:	86 b7       	in	r24, 0x36	; 54
+     426:	8f 70       	andi	r24, 0x0F	; 15
+     428:	80 6a       	ori	r24, 0xA0	; 160
+     42a:	86 bf       	out	0x36, r24	; 54
+     42c:	08 95       	ret
+
+0000042e <I2C_Stop>:
+}
+void I2C_Stop()
+{
+	TWSTOP;
+     42e:	86 b7       	in	r24, 0x36	; 54
+     430:	8f 70       	andi	r24, 0x0F	; 15
+     432:	80 69       	ori	r24, 0x90	; 144
+     434:	86 bf       	out	0x36, r24	; 54
+     436:	08 95       	ret
+
+00000438 <handleI2C_Receive>:
+}
+
+int handleI2C_Receive(unsigned char Slave)
+{
+     438:	cf 93       	push	r28
+     43a:	df 93       	push	r29
+     43c:	c8 2f       	mov	r28, r24
+	LED_RT_On();
+     43e:	0e 94 09 02 	call	0x412	; 0x412 <LED_RT_On>
+	unsigned char SLA_R;
+	SLA_R = ((Slave << 1) | TW_READ);
+	
+	//keep track of the modus (receiver or transmitter)
+	int Hlaska=0;
+	if(CHK(TWCR,TWINT)){
+     442:	06 b6       	in	r0, 0x36	; 54
+     444:	07 fe       	sbrs	r0, 7
+     446:	68 c0       	rjmp	.+208    	; 0x518 <handleI2C_Receive+0xe0>
+		switch(TW_STATUS){
+     448:	41 b1       	in	r20, 0x01	; 1
+     44a:	48 7f       	andi	r20, 0xF8	; 248
+     44c:	50 e0       	ldi	r21, 0x00	; 0
+     44e:	49 35       	cpi	r20, 0x59	; 89
+     450:	51 05       	cpc	r21, r1
+     452:	08 f0       	brcs	.+2      	; 0x456 <handleI2C_Receive+0x1e>
+     454:	64 c0       	rjmp	.+200    	; 0x51e <handleI2C_Receive+0xe6>
+     456:	fa 01       	movw	r30, r20
+     458:	e6 5d       	subi	r30, 0xD6	; 214
+     45a:	ff 4f       	sbci	r31, 0xFF	; 255
+     45c:	0c 94 b4 08 	jmp	0x1168	; 0x1168 <__tablejump2__>
+			case 0x10:
+				//RS232_Transmit_Char(0x10);
+			case 0x08:
+				//RS232_Transmit_Char(0x08);
+				//reset buffer indices
+				t_index =0;
+     460:	10 92 74 00 	sts	0x0074, r1
+				r_index =0;
+     464:	10 92 75 00 	sts	0x0075, r1
+
+int handleI2C_Receive(unsigned char Slave)
+{
+	LED_RT_On();
+	unsigned char SLA_R;
+	SLA_R = ((Slave << 1) | TW_READ);
+     468:	cc 0f       	add	r28, r28
+     46a:	c1 60       	ori	r28, 0x01	; 1
+				//RS232_Transmit_Char(0x08);
+				//reset buffer indices
+				t_index =0;
+				r_index =0;
+				//send SLA R .
+				TWDR = SLA_R;
+     46c:	c3 b9       	out	0x03, r28	; 3
+				TWACK;
+     46e:	86 b7       	in	r24, 0x36	; 54
+     470:	8f 70       	andi	r24, 0x0F	; 15
+     472:	80 68       	ori	r24, 0x80	; 128
+     474:	86 bf       	out	0x36, r24	; 54
+	LED_RT_On();
+	unsigned char SLA_R;
+	SLA_R = ((Slave << 1) | TW_READ);
+	
+	//keep track of the modus (receiver or transmitter)
+	int Hlaska=0;
+     476:	c0 e0       	ldi	r28, 0x00	; 0
+     478:	d0 e0       	ldi	r29, 0x00	; 0
+				t_index =0;
+				r_index =0;
+				//send SLA R .
+				TWDR = SLA_R;
+				TWACK;
+				break;
+     47a:	53 c0       	rjmp	.+166    	; 0x522 <handleI2C_Receive+0xea>
+			
+			case 0x28: //data acked by addressed receiver
+				//RS232_Transmit_Char(0x28);
+				TW_READ;
+				//TWSTART;
+				TWREPSTART;
+     47c:	86 b7       	in	r24, 0x36	; 54
+     47e:	8f 74       	andi	r24, 0x4F	; 79
+     480:	80 6a       	ori	r24, 0xA0	; 160
+     482:	86 bf       	out	0x36, r24	; 54
+	LED_RT_On();
+	unsigned char SLA_R;
+	SLA_R = ((Slave << 1) | TW_READ);
+	
+	//keep track of the modus (receiver or transmitter)
+	int Hlaska=0;
+     484:	c0 e0       	ldi	r28, 0x00	; 0
+     486:	d0 e0       	ldi	r29, 0x00	; 0
+			case 0x28: //data acked by addressed receiver
+				//RS232_Transmit_Char(0x28);
+				TW_READ;
+				//TWSTART;
+				TWREPSTART;
+				break;
+     488:	4c c0       	rjmp	.+152    	; 0x522 <handleI2C_Receive+0xea>
+			
+			case 0x38: //arbitration lost, do not want
+				//RS232_Transmit_Char(0x38);
+				
+				TWREPSTART;
+     48a:	86 b7       	in	r24, 0x36	; 54
+     48c:	8f 74       	andi	r24, 0x4F	; 79
+     48e:	80 6a       	ori	r24, 0xA0	; 160
+     490:	86 bf       	out	0x36, r24	; 54
+	LED_RT_On();
+	unsigned char SLA_R;
+	SLA_R = ((Slave << 1) | TW_READ);
+	
+	//keep track of the modus (receiver or transmitter)
+	int Hlaska=0;
+     492:	c0 e0       	ldi	r28, 0x00	; 0
+     494:	d0 e0       	ldi	r29, 0x00	; 0
+			case 0x38: //arbitration lost, do not want
+				//RS232_Transmit_Char(0x38);
+				
+				TWREPSTART;
+				//TWACK;
+				break;
+     496:	45 c0       	rjmp	.+138    	; 0x522 <handleI2C_Receive+0xea>
+				//-------------------------Master receiver mode-------------------
+				//SLA_R acked, nothing to do for master, just wait for data
+			
+			case 0x40:
+				//RS232_Transmit_Char(0x40);
+				recv[0] = TWDR;
+     498:	83 b1       	in	r24, 0x03	; 3
+     49a:	80 93 85 00 	sts	0x0085, r24
+				r_index = 1;
+     49e:	81 e0       	ldi	r24, 0x01	; 1
+     4a0:	80 93 75 00 	sts	0x0075, r24
+				TWACK_REC;
+     4a4:	86 b7       	in	r24, 0x36	; 54
+     4a6:	8f 70       	andi	r24, 0x0F	; 15
+     4a8:	80 6c       	ori	r24, 0xC0	; 192
+     4aa:	86 bf       	out	0x36, r24	; 54
+	LED_RT_On();
+	unsigned char SLA_R;
+	SLA_R = ((Slave << 1) | TW_READ);
+	
+	//keep track of the modus (receiver or transmitter)
+	int Hlaska=0;
+     4ac:	c0 e0       	ldi	r28, 0x00	; 0
+     4ae:	d0 e0       	ldi	r29, 0x00	; 0
+			case 0x40:
+				//RS232_Transmit_Char(0x40);
+				recv[0] = TWDR;
+				r_index = 1;
+				TWACK_REC;
+				break;
+     4b0:	38 c0       	rjmp	.+112    	; 0x522 <handleI2C_Receive+0xea>
+				//TWACK;
+				
+				//Odeslan stop stav TWSTA = 0, TWINT = 1, TWSTO = 1
+				//TWCR &= ~(1 << TWSTA);
+				//TWCR |= (1 << TWINT) | (1 << TWSTO);
+				TWCR = ((TWCR & TW_MASK_CR_TWEA) | (1 << TWSTO) | (1 << TWINT));
+     4b2:	86 b7       	in	r24, 0x36	; 54
+     4b4:	8f 74       	andi	r24, 0x4F	; 79
+     4b6:	80 69       	ori	r24, 0x90	; 144
+     4b8:	86 bf       	out	0x36, r24	; 54
+				Hlaska = 2;
+     4ba:	c2 e0       	ldi	r28, 0x02	; 2
+     4bc:	d0 e0       	ldi	r29, 0x00	; 0
+				break;
+     4be:	31 c0       	rjmp	.+98     	; 0x522 <handleI2C_Receive+0xea>
+				//non-last data acked (the last data byte has to be nacked)
+					
+			case 0x50:
+				//RS232_Transmit_Char(0x50);
+				//store it
+				recv[r_index] = TWDR;
+     4c0:	80 91 75 00 	lds	r24, 0x0075
+     4c4:	e8 2f       	mov	r30, r24
+     4c6:	f0 e0       	ldi	r31, 0x00	; 0
+     4c8:	93 b1       	in	r25, 0x03	; 3
+     4ca:	eb 57       	subi	r30, 0x7B	; 123
+     4cc:	ff 4f       	sbci	r31, 0xFF	; 255
+     4ce:	90 83       	st	Z, r25
+				r_index++;
+     4d0:	8f 5f       	subi	r24, 0xFF	; 255
+     4d2:	80 93 75 00 	sts	0x0075, r24
+				//if the next byte is not the last, ack the next received byte
+				if(r_index < BUFLEN_RECV)
+     4d6:	80 31       	cpi	r24, 0x10	; 16
+     4d8:	38 f4       	brcc	.+14     	; 0x4e8 <handleI2C_Receive+0xb0>
+				{
+					TWCR = ((TWCR & TW_MASK_CR) | (1 << TWEA) | (1 << TWINT));
+     4da:	86 b7       	in	r24, 0x36	; 54
+     4dc:	8f 70       	andi	r24, 0x0F	; 15
+     4de:	80 6c       	ori	r24, 0xC0	; 192
+     4e0:	86 bf       	out	0x36, r24	; 54
+	LED_RT_On();
+	unsigned char SLA_R;
+	SLA_R = ((Slave << 1) | TW_READ);
+	
+	//keep track of the modus (receiver or transmitter)
+	int Hlaska=0;
+     4e2:	c0 e0       	ldi	r28, 0x00	; 0
+     4e4:	d0 e0       	ldi	r29, 0x00	; 0
+     4e6:	1d c0       	rjmp	.+58     	; 0x522 <handleI2C_Receive+0xea>
+				{
+					//TWNACK;
+					//TWCR &= ~((1 << TWSTO) | (1 << TWSTA) | (1 << TWEA));
+					//TWCR |= (1 << TWINT);
+					
+					TWCR = ((TWCR & TW_MASK_CR) | (1 << TWINT));
+     4e8:	86 b7       	in	r24, 0x36	; 54
+     4ea:	8f 70       	andi	r24, 0x0F	; 15
+     4ec:	80 68       	ori	r24, 0x80	; 128
+     4ee:	86 bf       	out	0x36, r24	; 54
+					r_index = BUFLEN_RECV;
+     4f0:	80 e1       	ldi	r24, 0x10	; 16
+     4f2:	80 93 75 00 	sts	0x0075, r24
+	LED_RT_On();
+	unsigned char SLA_R;
+	SLA_R = ((Slave << 1) | TW_READ);
+	
+	//keep track of the modus (receiver or transmitter)
+	int Hlaska=0;
+     4f6:	c0 e0       	ldi	r28, 0x00	; 0
+     4f8:	d0 e0       	ldi	r29, 0x00	; 0
+     4fa:	13 c0       	rjmp	.+38     	; 0x522 <handleI2C_Receive+0xea>
+			
+			case 0x58: //last data nacked, as it should be
+				//RS232_Transmit_Char(0x58);
+				
+				//Odeslan stop stav TWSTA = 0, TWINT = 1, TWSTO = 1
+				TWCR = ((TWCR & TW_MASK_CR_TWEA) | (1 << TWSTO) | (1 << TWINT) | (1 << TWEN));
+     4fc:	86 b7       	in	r24, 0x36	; 54
+     4fe:	8b 74       	andi	r24, 0x4B	; 75
+     500:	84 69       	ori	r24, 0x94	; 148
+     502:	86 bf       	out	0x36, r24	; 54
+				//TWCR &= ~(1 << TWSTA);
+				//TWCR |= (1 << TWINT) | (1 << TWSTO);
+				
+				//TW_WRITE;
+				//TWSTART;
+				Hlaska = 1;
+     504:	c1 e0       	ldi	r28, 0x01	; 1
+     506:	d0 e0       	ldi	r29, 0x00	; 0
+			break;
+     508:	0c c0       	rjmp	.+24     	; 0x522 <handleI2C_Receive+0xea>
+			//--------------------- bus error---------------------------------
+			case 0x00:
+				//RS232_Transmit_Char(0x00);
+				//TWRESET;
+				//TWSTART;
+				TWSTOP;
+     50a:	86 b7       	in	r24, 0x36	; 54
+     50c:	8f 70       	andi	r24, 0x0F	; 15
+     50e:	80 69       	ori	r24, 0x90	; 144
+     510:	86 bf       	out	0x36, r24	; 54
+	LED_RT_On();
+	unsigned char SLA_R;
+	SLA_R = ((Slave << 1) | TW_READ);
+	
+	//keep track of the modus (receiver or transmitter)
+	int Hlaska=0;
+     512:	c0 e0       	ldi	r28, 0x00	; 0
+     514:	d0 e0       	ldi	r29, 0x00	; 0
+			case 0x00:
+				//RS232_Transmit_Char(0x00);
+				//TWRESET;
+				//TWSTART;
+				TWSTOP;
+			break;
+     516:	05 c0       	rjmp	.+10     	; 0x522 <handleI2C_Receive+0xea>
+	LED_RT_On();
+	unsigned char SLA_R;
+	SLA_R = ((Slave << 1) | TW_READ);
+	
+	//keep track of the modus (receiver or transmitter)
+	int Hlaska=0;
+     518:	c0 e0       	ldi	r28, 0x00	; 0
+     51a:	d0 e0       	ldi	r29, 0x00	; 0
+     51c:	02 c0       	rjmp	.+4      	; 0x522 <handleI2C_Receive+0xea>
+     51e:	c0 e0       	ldi	r28, 0x00	; 0
+     520:	d0 e0       	ldi	r29, 0x00	; 0
+				//TWSTART;
+				TWSTOP;
+			break;
+		}
+	}
+	LED_RT_Off();
+     522:	0e 94 0b 02 	call	0x416	; 0x416 <LED_RT_Off>
+	return Hlaska;
+}
+     526:	ce 01       	movw	r24, r28
+     528:	df 91       	pop	r29
+     52a:	cf 91       	pop	r28
+     52c:	08 95       	ret
+
+0000052e <handleI2C_Transmit>:
+
+int handleI2C_Transmit(unsigned char* Pole, unsigned char Slave)
+{
+     52e:	1f 93       	push	r17
+     530:	cf 93       	push	r28
+     532:	df 93       	push	r29
+     534:	ec 01       	movw	r28, r24
+     536:	16 2f       	mov	r17, r22
+	LED_RT_On();
+     538:	0e 94 09 02 	call	0x412	; 0x412 <LED_RT_On>
+	SLA_W = ((Slave << 1) | TW_WRITE);
+	//keep track of the modus (receiver or transmitter)
+
+	int Hlaska=0;
+
+	if(CHK(TWCR,TWINT)){
+     53c:	06 b6       	in	r0, 0x36	; 54
+     53e:	07 fe       	sbrs	r0, 7
+     540:	62 c0       	rjmp	.+196    	; 0x606 <handleI2C_Transmit+0xd8>
+		switch(TW_STATUS){
+     542:	41 b1       	in	r20, 0x01	; 1
+     544:	48 7f       	andi	r20, 0xF8	; 248
+     546:	50 e0       	ldi	r21, 0x00	; 0
+     548:	49 34       	cpi	r20, 0x49	; 73
+     54a:	51 05       	cpc	r21, r1
+     54c:	08 f0       	brcs	.+2      	; 0x550 <handleI2C_Transmit+0x22>
+     54e:	5e c0       	rjmp	.+188    	; 0x60c <handleI2C_Transmit+0xde>
+     550:	fa 01       	movw	r30, r20
+     552:	ed 57       	subi	r30, 0x7D	; 125
+     554:	ff 4f       	sbci	r31, 0xFF	; 255
+     556:	0c 94 b4 08 	jmp	0x1168	; 0x1168 <__tablejump2__>
+				//RS232_Transmit_Char(0x10);
+			case 0x08:
+				
+				//RS232_Transmit_Char(0x08);
+				//reset buffer indices
+				t_index =0;
+     55a:	10 92 74 00 	sts	0x0074, r1
+				r_index =0;
+     55e:	10 92 75 00 	sts	0x0075, r1
+
+int handleI2C_Transmit(unsigned char* Pole, unsigned char Slave)
+{
+	LED_RT_On();
+	unsigned char SLA_W;
+	SLA_W = ((Slave << 1) | TW_WRITE);
+     562:	11 0f       	add	r17, r17
+				//RS232_Transmit_Char(0x08);
+				//reset buffer indices
+				t_index =0;
+				r_index =0;
+				//send SLA W or R depending on what mode we want.
+				TWDR = SLA_W;
+     564:	13 b9       	out	0x03, r17	; 3
+				TWACK;
+     566:	86 b7       	in	r24, 0x36	; 54
+     568:	8f 70       	andi	r24, 0x0F	; 15
+     56a:	80 68       	ori	r24, 0x80	; 128
+     56c:	86 bf       	out	0x36, r24	; 54
+	LED_RT_On();
+	unsigned char SLA_W;
+	SLA_W = ((Slave << 1) | TW_WRITE);
+	//keep track of the modus (receiver or transmitter)
+
+	int Hlaska=0;
+     56e:	c0 e0       	ldi	r28, 0x00	; 0
+     570:	d0 e0       	ldi	r29, 0x00	; 0
+				r_index =0;
+				//send SLA W or R depending on what mode we want.
+				TWDR = SLA_W;
+				TWACK;
+				
+			break;
+     572:	4e c0       	rjmp	.+156    	; 0x610 <handleI2C_Transmit+0xe2>
+			//--------------- Master transmitter mode-------------------------
+			case 0x18: // SLA_W acked
+				//RS232_Transmit_Char(0x18);
+				//load first data
+				//TWDR = tran[0];
+				TWDR = Pole[t_index];
+     574:	80 91 74 00 	lds	r24, 0x0074
+     578:	c8 0f       	add	r28, r24
+     57a:	d1 1d       	adc	r29, r1
+     57c:	88 81       	ld	r24, Y
+     57e:	83 b9       	out	0x03, r24	; 3
+				t_index=1;
+     580:	81 e0       	ldi	r24, 0x01	; 1
+     582:	80 93 74 00 	sts	0x0074, r24
+				TWACK;
+     586:	86 b7       	in	r24, 0x36	; 54
+     588:	8f 70       	andi	r24, 0x0F	; 15
+     58a:	80 68       	ori	r24, 0x80	; 128
+     58c:	86 bf       	out	0x36, r24	; 54
+	LED_RT_On();
+	unsigned char SLA_W;
+	SLA_W = ((Slave << 1) | TW_WRITE);
+	//keep track of the modus (receiver or transmitter)
+
+	int Hlaska=0;
+     58e:	c0 e0       	ldi	r28, 0x00	; 0
+     590:	d0 e0       	ldi	r29, 0x00	; 0
+				//load first data
+				//TWDR = tran[0];
+				TWDR = Pole[t_index];
+				t_index=1;
+				TWACK;
+			break;
+     592:	3e c0       	rjmp	.+124    	; 0x610 <handleI2C_Transmit+0xe2>
+			case 0x20:
+				//Sem bude return napøíklad 2
+				//RS232_Transmit_Char(0x20);
+				//TWACK;
+				/*TWCR |= (1 << TWSTA) | (1 << TWSTO);*/
+				TWSTOP;
+     594:	86 b7       	in	r24, 0x36	; 54
+     596:	8f 70       	andi	r24, 0x0F	; 15
+     598:	80 69       	ori	r24, 0x90	; 144
+     59a:	86 bf       	out	0x36, r24	; 54
+				Hlaska = 2;
+     59c:	c2 e0       	ldi	r28, 0x02	; 2
+     59e:	d0 e0       	ldi	r29, 0x00	; 0
+			break;
+     5a0:	37 c0       	rjmp	.+110    	; 0x610 <handleI2C_Transmit+0xe2>
+			
+			case 0x28: //data acked by addressed receiver
+				//RS232_Transmit_Char(0x28);
+				//load next byte if we're not at the end of the buffer
+				if(t_index < BUFLEN_TRAN){
+     5a2:	80 91 74 00 	lds	r24, 0x0074
+     5a6:	80 31       	cpi	r24, 0x10	; 16
+     5a8:	80 f4       	brcc	.+32     	; 0x5ca <handleI2C_Transmit+0x9c>
+					//TWDR =  tran[t_index];
+					TWDR = Pole[t_index];
+     5aa:	c8 0f       	add	r28, r24
+     5ac:	d1 1d       	adc	r29, r1
+     5ae:	88 81       	ld	r24, Y
+     5b0:	83 b9       	out	0x03, r24	; 3
+					t_index++;
+     5b2:	80 91 74 00 	lds	r24, 0x0074
+     5b6:	8f 5f       	subi	r24, 0xFF	; 255
+     5b8:	80 93 74 00 	sts	0x0074, r24
+					TWACK;
+     5bc:	86 b7       	in	r24, 0x36	; 54
+     5be:	8f 70       	andi	r24, 0x0F	; 15
+     5c0:	80 68       	ori	r24, 0x80	; 128
+     5c2:	86 bf       	out	0x36, r24	; 54
+	LED_RT_On();
+	unsigned char SLA_W;
+	SLA_W = ((Slave << 1) | TW_WRITE);
+	//keep track of the modus (receiver or transmitter)
+
+	int Hlaska=0;
+     5c4:	c0 e0       	ldi	r28, 0x00	; 0
+     5c6:	d0 e0       	ldi	r29, 0x00	; 0
+				if(t_index < BUFLEN_TRAN){
+					//TWDR =  tran[t_index];
+					TWDR = Pole[t_index];
+					t_index++;
+					TWACK;
+					break;
+     5c8:	23 c0       	rjmp	.+70     	; 0x610 <handleI2C_Transmit+0xe2>
+				}	
+				else
+				{
+					Hlaska = 1;
+					t_index=0;					
+     5ca:	10 92 74 00 	sts	0x0074, r1
+					TWSTOP;
+     5ce:	86 b7       	in	r24, 0x36	; 54
+     5d0:	8f 70       	andi	r24, 0x0F	; 15
+     5d2:	80 69       	ori	r24, 0x90	; 144
+     5d4:	86 bf       	out	0x36, r24	; 54
+					TWACK;
+					break;
+				}	
+				else
+				{
+					Hlaska = 1;
+     5d6:	c1 e0       	ldi	r28, 0x01	; 1
+     5d8:	d0 e0       	ldi	r29, 0x00	; 0
+					t_index=0;					
+					TWSTOP;
+					break;
+     5da:	1a c0       	rjmp	.+52     	; 0x610 <handleI2C_Transmit+0xe2>
+				//RS232_Transmit_Char(0x38);
+				//data nacked, could be faulty buffer, could be dc, start over
+			
+			case 0x30:
+				//RS232_Transmit_Char(0x30);
+				TWSTOP;
+     5dc:	86 b7       	in	r24, 0x36	; 54
+     5de:	8f 70       	andi	r24, 0x0F	; 15
+     5e0:	80 69       	ori	r24, 0x90	; 144
+     5e2:	86 bf       	out	0x36, r24	; 54
+				Hlaska = 2;
+     5e4:	c2 e0       	ldi	r28, 0x02	; 2
+     5e6:	d0 e0       	ldi	r29, 0x00	; 0
+			break;
+     5e8:	13 c0       	rjmp	.+38     	; 0x610 <handleI2C_Transmit+0xe2>
+			
+			case 0x48:
+				//RS232_Transmit_Char(0x48);
+				TWSTOP;
+     5ea:	86 b7       	in	r24, 0x36	; 54
+     5ec:	8f 70       	andi	r24, 0x0F	; 15
+     5ee:	80 69       	ori	r24, 0x90	; 144
+     5f0:	86 bf       	out	0x36, r24	; 54
+	LED_RT_On();
+	unsigned char SLA_W;
+	SLA_W = ((Slave << 1) | TW_WRITE);
+	//keep track of the modus (receiver or transmitter)
+
+	int Hlaska=0;
+     5f2:	c0 e0       	ldi	r28, 0x00	; 0
+     5f4:	d0 e0       	ldi	r29, 0x00	; 0
+			break;
+			
+			case 0x48:
+				//RS232_Transmit_Char(0x48);
+				TWSTOP;
+			break;
+     5f6:	0c c0       	rjmp	.+24     	; 0x610 <handleI2C_Transmit+0xe2>
+			
+			//--------------------- bus error---------------------------------
+			case 0x00:
+				//RS232_Transmit_Char(0x00);
+				TWSTOP;
+     5f8:	86 b7       	in	r24, 0x36	; 54
+     5fa:	8f 70       	andi	r24, 0x0F	; 15
+     5fc:	80 69       	ori	r24, 0x90	; 144
+     5fe:	86 bf       	out	0x36, r24	; 54
+	LED_RT_On();
+	unsigned char SLA_W;
+	SLA_W = ((Slave << 1) | TW_WRITE);
+	//keep track of the modus (receiver or transmitter)
+
+	int Hlaska=0;
+     600:	c0 e0       	ldi	r28, 0x00	; 0
+     602:	d0 e0       	ldi	r29, 0x00	; 0
+			
+			//--------------------- bus error---------------------------------
+			case 0x00:
+				//RS232_Transmit_Char(0x00);
+				TWSTOP;
+			break;
+     604:	05 c0       	rjmp	.+10     	; 0x610 <handleI2C_Transmit+0xe2>
+	LED_RT_On();
+	unsigned char SLA_W;
+	SLA_W = ((Slave << 1) | TW_WRITE);
+	//keep track of the modus (receiver or transmitter)
+
+	int Hlaska=0;
+     606:	c0 e0       	ldi	r28, 0x00	; 0
+     608:	d0 e0       	ldi	r29, 0x00	; 0
+     60a:	02 c0       	rjmp	.+4      	; 0x610 <handleI2C_Transmit+0xe2>
+     60c:	c0 e0       	ldi	r28, 0x00	; 0
+     60e:	d0 e0       	ldi	r29, 0x00	; 0
+				//RS232_Transmit_Char(0x00);
+				TWSTOP;
+			break;
+		}
+	}
+	LED_RT_Off();
+     610:	0e 94 0b 02 	call	0x416	; 0x416 <LED_RT_Off>
+	return Hlaska;
+	
+}
+     614:	ce 01       	movw	r24, r28
+     616:	df 91       	pop	r29
+     618:	cf 91       	pop	r28
+     61a:	1f 91       	pop	r17
+     61c:	08 95       	ret
+
+0000061e <timer_init>:
+
+  // * Timer 1 - system timer and 2× PWM
+  // 14745600 / 256 / 576 = 100 Hz
+  //   Xtal  /presca/ TOP
+  
+  OCR1A = 0;
+     61e:	1b bc       	out	0x2b, r1	; 43
+     620:	1a bc       	out	0x2a, r1	; 42
+  OCR1B = 0;
+     622:	19 bc       	out	0x29, r1	; 41
+     624:	18 bc       	out	0x28, r1	; 40
+  ICR1 = 575; 
+     626:	8f e3       	ldi	r24, 0x3F	; 63
+     628:	92 e0       	ldi	r25, 0x02	; 2
+     62a:	97 bd       	out	0x27, r25	; 39
+     62c:	86 bd       	out	0x26, r24	; 38
+  TCCR1A = BV(WGM11) | BV(COM1A1) | BV(COM1B1); // Fast PWM
+     62e:	82 ea       	ldi	r24, 0xA2	; 162
+     630:	8f bd       	out	0x2f, r24	; 47
+  TCCR1B = BV(WGM12) | BV(WGM13) | 4; // Fast PWM + presca = 1024
+     632:	8c e1       	ldi	r24, 0x1C	; 28
+     634:	8e bd       	out	0x2e, r24	; 46
+  TIMSK |= BV(TICIE1); // capt int enabled
+     636:	89 b7       	in	r24, 0x39	; 57
+     638:	80 62       	ori	r24, 0x20	; 32
+     63a:	89 bf       	out	0x39, r24	; 57
+     63c:	08 95       	ret
+
+0000063e <TB_Send>:
+/******************************************************/
+// private functions
+/******************************************************/
+void TB_Send(void)
+{
+  if (TB_Callback_TX != NULL) TB_Callback_TX();
+     63e:	e0 91 78 00 	lds	r30, 0x0078
+     642:	f0 91 79 00 	lds	r31, 0x0079
+     646:	30 97       	sbiw	r30, 0x00	; 0
+     648:	09 f0       	breq	.+2      	; 0x64c <TB_Send+0xe>
+     64a:	09 95       	icall
+     64c:	08 95       	ret
+
+0000064e <TB_calcSum>:
+}
+
+
+/******************************************************/
+void TB_calcSum(void)
+{
+     64e:	e7 eb       	ldi	r30, 0xB7	; 183
+     650:	f0 e0       	ldi	r31, 0x00	; 0
+     652:	8f eb       	ldi	r24, 0xBF	; 191
+     654:	90 e0       	ldi	r25, 0x00	; 0
+  byte i, sum;
+  sum = 0;
+     656:	20 e0       	ldi	r18, 0x00	; 0
+  for(i=0; i<8; i++) {
+    sum += TB_bufOut[i];
+     658:	31 91       	ld	r19, Z+
+     65a:	23 0f       	add	r18, r19
+/******************************************************/
+void TB_calcSum(void)
+{
+  byte i, sum;
+  sum = 0;
+  for(i=0; i<8; i++) {
+     65c:	e8 17       	cp	r30, r24
+     65e:	f9 07       	cpc	r31, r25
+     660:	d9 f7       	brne	.-10     	; 0x658 <TB_calcSum+0xa>
+    sum += TB_bufOut[i];
+  }
+  TB_bufOut[TB_BUF_SUM] = sum;
+     662:	20 93 bf 00 	sts	0x00BF, r18
+     666:	08 95       	ret
+
+00000668 <TB_Init>:
+/******************************************************/
+// public functions
+/******************************************************/
+// initialize
+void TB_Init(void * setting_in_eeprom)
+{
+     668:	cf 93       	push	r28
+     66a:	df 93       	push	r29
+     66c:	ec 01       	movw	r28, r24
+  addr_setting_in_eeprom = setting_in_eeprom;
+     66e:	90 93 d1 00 	sts	0x00D1, r25
+     672:	80 93 d0 00 	sts	0x00D0, r24
+  //                 DST,   SRC, size
+  eeprom_read_block((void *) &TB_gbparam, setting_in_eeprom, sizeof(struct TB_GBPARAM));
+     676:	45 e0       	ldi	r20, 0x05	; 5
+     678:	50 e0       	ldi	r21, 0x00	; 0
+     67a:	bc 01       	movw	r22, r24
+     67c:	80 ec       	ldi	r24, 0xC0	; 192
+     67e:	90 e0       	ldi	r25, 0x00	; 0
+     680:	0e 94 ba 08 	call	0x1174	; 0x1174 <__eerd_block_m32>
+  if (TB_gbparam.eemagic != 66) {
+     684:	80 91 c0 00 	lds	r24, 0x00C0
+     688:	82 34       	cpi	r24, 0x42	; 66
+     68a:	a9 f0       	breq	.+42     	; 0x6b6 <TB_Init+0x4e>
+    // not valid data in eeprom
+    TB_gbparam.eemagic = 66;
+     68c:	82 e4       	ldi	r24, 0x42	; 66
+     68e:	80 93 c0 00 	sts	0x00C0, r24
+    TB_gbparam.baud = 4;
+     692:	84 e0       	ldi	r24, 0x04	; 4
+     694:	80 93 c1 00 	sts	0x00C1, r24
+    TB_gbparam.address = 5;
+     698:	85 e0       	ldi	r24, 0x05	; 5
+     69a:	80 93 c2 00 	sts	0x00C2, r24
+    TB_gbparam.telegram_pause_time = 0;
+     69e:	10 92 c3 00 	sts	0x00C3, r1
+    TB_gbparam.host_address = 2;
+     6a2:	82 e0       	ldi	r24, 0x02	; 2
+     6a4:	80 93 c4 00 	sts	0x00C4, r24
+    // save default setting to eeprom
+    eeprom_write_block((void *) &TB_gbparam, setting_in_eeprom, sizeof(struct TB_GBPARAM));
+     6a8:	45 e0       	ldi	r20, 0x05	; 5
+     6aa:	50 e0       	ldi	r21, 0x00	; 0
+     6ac:	be 01       	movw	r22, r28
+     6ae:	80 ec       	ldi	r24, 0xC0	; 192
+     6b0:	90 e0       	ldi	r25, 0x00	; 0
+     6b2:	0e 94 db 08 	call	0x11b6	; 0x11b6 <__eewr_block_m32>
+  }
+  // ted mame funkèni konfiguraci naètenou
+
+  // zvolíme správnou komunikaèní rychlost:
+  if (TB_Callback_setBaud != NULL) TB_Callback_setBaud(TB_gbparam.baud);
+     6b6:	e0 91 76 00 	lds	r30, 0x0076
+     6ba:	f0 91 77 00 	lds	r31, 0x0077
+     6be:	30 97       	sbiw	r30, 0x00	; 0
+     6c0:	19 f0       	breq	.+6      	; 0x6c8 <TB_Init+0x60>
+     6c2:	80 91 c1 00 	lds	r24, 0x00C1
+     6c6:	09 95       	icall
+
+  // poznaèíme si adresy
+  TB_AddrReply = TB_gbparam.host_address;
+     6c8:	80 91 c4 00 	lds	r24, 0x00C4
+     6cc:	80 93 d2 00 	sts	0x00D2, r24
+  TB_AddrModule= TB_gbparam.address;
+     6d0:	80 91 c2 00 	lds	r24, 0x00C2
+     6d4:	80 93 c6 00 	sts	0x00C6, r24
+}
+     6d8:	df 91       	pop	r29
+     6da:	cf 91       	pop	r28
+     6dc:	08 95       	ret
+
+000006de <TB_SendAck>:
+
+/******************************************************/
+// send response from module
+void TB_SendAck(byte status, long int value)
+{
+  TB_bufOut[0] = TB_AddrReply;
+     6de:	90 91 d2 00 	lds	r25, 0x00D2
+     6e2:	90 93 b7 00 	sts	0x00B7, r25
+  TB_bufOut[1] = TB_AddrModule;
+     6e6:	90 91 c6 00 	lds	r25, 0x00C6
+     6ea:	90 93 b8 00 	sts	0x00B8, r25
+  TB_bufOut[2] = status;
+     6ee:	80 93 b9 00 	sts	0x00B9, r24
+  TB_bufOut[3] = TB_bufIn[TB_BUF_COMMAND]; //command;
+     6f2:	80 91 c8 00 	lds	r24, 0x00C8
+     6f6:	80 93 ba 00 	sts	0x00BA, r24
+  TB_bufOut[4] = value >> 24;
+     6fa:	70 93 bb 00 	sts	0x00BB, r23
+  TB_bufOut[5] = value >> 16;
+     6fe:	60 93 bc 00 	sts	0x00BC, r22
+  TB_bufOut[6] = value >> 8;
+     702:	50 93 bd 00 	sts	0x00BD, r21
+  TB_bufOut[7] = value >> 0;
+     706:	40 93 be 00 	sts	0x00BE, r20
+  TB_calcSum();
+     70a:	0e 94 27 03 	call	0x64e	; 0x64e <TB_calcSum>
+  TB_Send();
+     70e:	0e 94 1f 03 	call	0x63e	; 0x63e <TB_Send>
+     712:	08 95       	ret
+
+00000714 <TB_Read>:
+{
+  byte i;
+  byte sum;
+
+  // check address
+  if (TB_bufIn[TB_BUF_ADDRESS] != TB_AddrModule) return 2;
+     714:	90 91 c7 00 	lds	r25, 0x00C7
+     718:	80 91 c6 00 	lds	r24, 0x00C6
+     71c:	98 13       	cpse	r25, r24
+     71e:	16 c0       	rjmp	.+44     	; 0x74c <TB_Read+0x38>
+     720:	e7 ec       	ldi	r30, 0xC7	; 199
+     722:	f0 e0       	ldi	r31, 0x00	; 0
+     724:	8f ec       	ldi	r24, 0xCF	; 207
+     726:	90 e0       	ldi	r25, 0x00	; 0
+     728:	20 e0       	ldi	r18, 0x00	; 0
+  
+  // check SUM byte
+  sum = 0;
+  for( i=0; i<8; i++) {
+    sum += TB_bufIn[i];
+     72a:	31 91       	ld	r19, Z+
+     72c:	23 0f       	add	r18, r19
+  // check address
+  if (TB_bufIn[TB_BUF_ADDRESS] != TB_AddrModule) return 2;
+  
+  // check SUM byte
+  sum = 0;
+  for( i=0; i<8; i++) {
+     72e:	e8 17       	cp	r30, r24
+     730:	f9 07       	cpc	r31, r25
+     732:	d9 f7       	brne	.-10     	; 0x72a <TB_Read+0x16>
+    sum += TB_bufIn[i];
+  }
+  if (sum != TB_bufIn[TB_BUF_SUM]) {
+     734:	80 91 cf 00 	lds	r24, 0x00CF
+     738:	28 17       	cp	r18, r24
+     73a:	51 f0       	breq	.+20     	; 0x750 <TB_Read+0x3c>
+    TB_SendAck(1, 0); // wrong checksum
+     73c:	40 e0       	ldi	r20, 0x00	; 0
+     73e:	50 e0       	ldi	r21, 0x00	; 0
+     740:	ba 01       	movw	r22, r20
+     742:	81 e0       	ldi	r24, 0x01	; 1
+     744:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+    return 3; // bad checksum
+     748:	83 e0       	ldi	r24, 0x03	; 3
+     74a:	08 95       	ret
+{
+  byte i;
+  byte sum;
+
+  // check address
+  if (TB_bufIn[TB_BUF_ADDRESS] != TB_AddrModule) return 2;
+     74c:	82 e0       	ldi	r24, 0x02	; 2
+     74e:	08 95       	ret
+    TB_SendAck(1, 0); // wrong checksum
+    return 3; // bad checksum
+  }
+
+  // we have valid data in TB_bufIn
+  return 0;
+     750:	80 e0       	ldi	r24, 0x00	; 0
+}
+     752:	08 95       	ret
+
+00000754 <TB_Decode>:
+
+/******************************************************/
+// decode incoming command
+// return = unhandled command number, 0=handled or unknown
+byte TB_Decode(void)
+{
+     754:	0f 93       	push	r16
+     756:	1f 93       	push	r17
+     758:	cf 93       	push	r28
+     75a:	df 93       	push	r29
+     75c:	1f 92       	push	r1
+     75e:	cd b7       	in	r28, 0x3d	; 61
+     760:	de b7       	in	r29, 0x3e	; 62
+  volatile byte b;
+  TB_Value = (((int32_t) TB_bufIn[4]) << 24) |
+     762:	20 91 cb 00 	lds	r18, 0x00CB
+             (((int32_t) TB_bufIn[5]) << 16) |
+     766:	60 91 cc 00 	lds	r22, 0x00CC
+     76a:	86 2f       	mov	r24, r22
+     76c:	90 e0       	ldi	r25, 0x00	; 0
+     76e:	a0 e0       	ldi	r26, 0x00	; 0
+     770:	b0 e0       	ldi	r27, 0x00	; 0
+     772:	dc 01       	movw	r26, r24
+     774:	99 27       	eor	r25, r25
+     776:	88 27       	eor	r24, r24
+// decode incoming command
+// return = unhandled command number, 0=handled or unknown
+byte TB_Decode(void)
+{
+  volatile byte b;
+  TB_Value = (((int32_t) TB_bufIn[4]) << 24) |
+     778:	b2 2b       	or	r27, r18
+             (((int32_t) TB_bufIn[5]) << 16) |
+             (((int32_t) TB_bufIn[6]) <<  8) |
+             (((int32_t) TB_bufIn[7])      ) ;
+     77a:	20 91 ce 00 	lds	r18, 0x00CE
+// return = unhandled command number, 0=handled or unknown
+byte TB_Decode(void)
+{
+  volatile byte b;
+  TB_Value = (((int32_t) TB_bufIn[4]) << 24) |
+             (((int32_t) TB_bufIn[5]) << 16) |
+     77e:	82 2b       	or	r24, r18
+             (((int32_t) TB_bufIn[6]) <<  8) |
+     780:	20 91 cd 00 	lds	r18, 0x00CD
+     784:	bc 01       	movw	r22, r24
+     786:	cd 01       	movw	r24, r26
+     788:	72 2b       	or	r23, r18
+// decode incoming command
+// return = unhandled command number, 0=handled or unknown
+byte TB_Decode(void)
+{
+  volatile byte b;
+  TB_Value = (((int32_t) TB_bufIn[4]) << 24) |
+     78a:	60 93 b3 00 	sts	0x00B3, r22
+     78e:	70 93 b4 00 	sts	0x00B4, r23
+     792:	80 93 b5 00 	sts	0x00B5, r24
+     796:	90 93 b6 00 	sts	0x00B6, r25
+             (((int32_t) TB_bufIn[5]) << 16) |
+             (((int32_t) TB_bufIn[6]) <<  8) |
+             (((int32_t) TB_bufIn[7])      ) ;
+
+  switch (TB_bufIn[TB_BUF_COMMAND]) {
+     79a:	20 91 c8 00 	lds	r18, 0x00C8
+     79e:	2a 30       	cpi	r18, 0x0A	; 10
+     7a0:	09 f4       	brne	.+2      	; 0x7a4 <TB_Decode+0x50>
+     7a2:	82 c2       	rjmp	.+1284   	; 0xca8 <__stack+0x449>
+     7a4:	88 f4       	brcc	.+34     	; 0x7c8 <TB_Decode+0x74>
+     7a6:	24 30       	cpi	r18, 0x04	; 4
+     7a8:	09 f4       	brne	.+2      	; 0x7ac <TB_Decode+0x58>
+     7aa:	f8 c2       	rjmp	.+1520   	; 0xd9c <__stack+0x53d>
+     7ac:	28 f4       	brcc	.+10     	; 0x7b8 <TB_Decode+0x64>
+     7ae:	21 30       	cpi	r18, 0x01	; 1
+     7b0:	09 f1       	breq	.+66     	; 0x7f4 <TB_Decode+0xa0>
+     7b2:	22 30       	cpi	r18, 0x02	; 2
+     7b4:	39 f1       	breq	.+78     	; 0x804 <TB_Decode+0xb0>
+     7b6:	ea c2       	rjmp	.+1492   	; 0xd8c <__stack+0x52d>
+     7b8:	26 30       	cpi	r18, 0x06	; 6
+     7ba:	09 f4       	brne	.+2      	; 0x7be <TB_Decode+0x6a>
+     7bc:	74 c0       	rjmp	.+232    	; 0x8a6 <__stack+0x47>
+     7be:	50 f1       	brcs	.+84     	; 0x814 <TB_Decode+0xc0>
+     7c0:	29 30       	cpi	r18, 0x09	; 9
+     7c2:	09 f4       	brne	.+2      	; 0x7c6 <TB_Decode+0x72>
+     7c4:	cf c1       	rjmp	.+926    	; 0xb64 <__stack+0x305>
+     7c6:	e2 c2       	rjmp	.+1476   	; 0xd8c <__stack+0x52d>
+     7c8:	2f 30       	cpi	r18, 0x0F	; 15
+     7ca:	09 f4       	brne	.+2      	; 0x7ce <TB_Decode+0x7a>
+     7cc:	53 c1       	rjmp	.+678    	; 0xa74 <__stack+0x215>
+     7ce:	38 f4       	brcc	.+14     	; 0x7de <TB_Decode+0x8a>
+     7d0:	2d 30       	cpi	r18, 0x0D	; 13
+     7d2:	09 f4       	brne	.+2      	; 0x7d6 <TB_Decode+0x82>
+     7d4:	c5 c1       	rjmp	.+906    	; 0xb60 <__stack+0x301>
+     7d6:	2e 30       	cpi	r18, 0x0E	; 14
+     7d8:	09 f4       	brne	.+2      	; 0x7dc <TB_Decode+0x88>
+     7da:	e7 c0       	rjmp	.+462    	; 0x9aa <__stack+0x14b>
+     7dc:	d7 c2       	rjmp	.+1454   	; 0xd8c <__stack+0x52d>
+     7de:	28 38       	cpi	r18, 0x88	; 136
+     7e0:	09 f4       	brne	.+2      	; 0x7e4 <TB_Decode+0x90>
+     7e2:	ab c2       	rjmp	.+1366   	; 0xd3a <__stack+0x4db>
+     7e4:	2e 3f       	cpi	r18, 0xFE	; 254
+     7e6:	21 f0       	breq	.+8      	; 0x7f0 <TB_Decode+0x9c>
+     7e8:	20 31       	cpi	r18, 0x10	; 16
+     7ea:	09 f0       	breq	.+2      	; 0x7ee <TB_Decode+0x9a>
+     7ec:	cf c2       	rjmp	.+1438   	; 0xd8c <__stack+0x52d>
+     7ee:	b6 c1       	rjmp	.+876    	; 0xb5c <__stack+0x2fd>
+    case TB_CMD_DEBUG:
+      return TB_CMD_DEBUG;
+     7f0:	8e ef       	ldi	r24, 0xFE	; 254
+     7f2:	d9 c2       	rjmp	.+1458   	; 0xda6 <__stack+0x547>
+      break;
+    case TB_CMD_ROR:
+      TB_SendAck(TB_ERR_OK, 0);
+     7f4:	40 e0       	ldi	r20, 0x00	; 0
+     7f6:	50 e0       	ldi	r21, 0x00	; 0
+     7f8:	ba 01       	movw	r22, r20
+     7fa:	84 e6       	ldi	r24, 0x64	; 100
+     7fc:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      return TB_CMD_ROR;
+     800:	81 e0       	ldi	r24, 0x01	; 1
+     802:	d1 c2       	rjmp	.+1442   	; 0xda6 <__stack+0x547>
+      break;
+    case TB_CMD_ROL:
+      TB_SendAck(TB_ERR_OK, 0);
+     804:	40 e0       	ldi	r20, 0x00	; 0
+     806:	50 e0       	ldi	r21, 0x00	; 0
+     808:	ba 01       	movw	r22, r20
+     80a:	84 e6       	ldi	r24, 0x64	; 100
+     80c:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      return TB_CMD_ROL;
+     810:	82 e0       	ldi	r24, 0x02	; 2
+     812:	c9 c2       	rjmp	.+1426   	; 0xda6 <__stack+0x547>
+      break;
+    case TB_CMD_MVP:
+      return TB_CMD_MVP;
+      break;
+    case TB_CMD_SAP: // set axis parameter
+      if (TB_bufIn[TB_BUF_MOTOR] != 0) {
+     814:	20 91 ca 00 	lds	r18, 0x00CA
+     818:	22 23       	and	r18, r18
+     81a:	41 f0       	breq	.+16     	; 0x82c <TB_Decode+0xd8>
+        TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+     81c:	40 e0       	ldi	r20, 0x00	; 0
+     81e:	50 e0       	ldi	r21, 0x00	; 0
+     820:	ba 01       	movw	r22, r20
+     822:	84 e0       	ldi	r24, 0x04	; 4
+     824:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     828:	80 e0       	ldi	r24, 0x00	; 0
+     82a:	bd c2       	rjmp	.+1402   	; 0xda6 <__stack+0x547>
+      break;
+    case TB_CMD_SAP: // set axis parameter
+      if (TB_bufIn[TB_BUF_MOTOR] != 0) {
+        TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+      } else {
+        switch (TB_bufIn[TB_BUF_TYPE]) {
+     82c:	20 91 c9 00 	lds	r18, 0x00C9
+     830:	26 30       	cpi	r18, 0x06	; 6
+     832:	e9 f0       	breq	.+58     	; 0x86e <__stack+0xf>
+     834:	28 f4       	brcc	.+10     	; 0x840 <TB_Decode+0xec>
+     836:	24 30       	cpi	r18, 0x04	; 4
+     838:	41 f0       	breq	.+16     	; 0x84a <TB_Decode+0xf6>
+     83a:	25 30       	cpi	r18, 0x05	; 5
+     83c:	79 f0       	breq	.+30     	; 0x85c <TB_Decode+0x108>
+     83e:	2b c0       	rjmp	.+86     	; 0x896 <__stack+0x37>
+     840:	27 30       	cpi	r18, 0x07	; 7
+     842:	f1 f0       	breq	.+60     	; 0x880 <__stack+0x21>
+     844:	2c 38       	cpi	r18, 0x8C	; 140
+     846:	29 f1       	breq	.+74     	; 0x892 <__stack+0x33>
+     848:	26 c0       	rjmp	.+76     	; 0x896 <__stack+0x37>
+          case TB_PARAM_SPEED:
+            TB_param.speed = TB_Value;
+     84a:	60 93 9e 00 	sts	0x009E, r22
+     84e:	70 93 9f 00 	sts	0x009F, r23
+     852:	80 93 a0 00 	sts	0x00A0, r24
+     856:	90 93 a1 00 	sts	0x00A1, r25
+            break;
+     85a:	1d c0       	rjmp	.+58     	; 0x896 <__stack+0x37>
+          case TB_PARAM_ACCELERATION:
+            TB_param.acceleration = TB_Value;
+     85c:	60 93 a2 00 	sts	0x00A2, r22
+     860:	70 93 a3 00 	sts	0x00A3, r23
+     864:	80 93 a4 00 	sts	0x00A4, r24
+     868:	90 93 a5 00 	sts	0x00A5, r25
+            break;
+     86c:	14 c0       	rjmp	.+40     	; 0x896 <__stack+0x37>
+          case TB_PARAM_CURRENT_RUN:
+            TB_param.current = TB_Value;
+     86e:	60 93 a6 00 	sts	0x00A6, r22
+     872:	70 93 a7 00 	sts	0x00A7, r23
+     876:	80 93 a8 00 	sts	0x00A8, r24
+     87a:	90 93 a9 00 	sts	0x00A9, r25
+            break;
+     87e:	0b c0       	rjmp	.+22     	; 0x896 <__stack+0x37>
+          case TB_PARAM_CURRENT_HOLD:
+            TB_param.current_hold = TB_Value;
+     880:	60 93 aa 00 	sts	0x00AA, r22
+     884:	70 93 ab 00 	sts	0x00AB, r23
+     888:	80 93 ac 00 	sts	0x00AC, r24
+     88c:	90 93 ad 00 	sts	0x00AD, r25
+            break;
+     890:	02 c0       	rjmp	.+4      	; 0x896 <__stack+0x37>
+          case TB_PARAM_RESOLUTION:
+            TB_param.resolution = TB_Value;
+     892:	60 93 ae 00 	sts	0x00AE, r22
+
+/******************************************************/
+// send OK response from module
+inline void TB_SendAckOK(void)
+{
+  TB_SendAck(100, 0);
+     896:	40 e0       	ldi	r20, 0x00	; 0
+     898:	50 e0       	ldi	r21, 0x00	; 0
+     89a:	ba 01       	movw	r22, r20
+     89c:	84 e6       	ldi	r24, 0x64	; 100
+     89e:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     8a2:	80 e0       	ldi	r24, 0x00	; 0
+     8a4:	80 c2       	rjmp	.+1280   	; 0xda6 <__stack+0x547>
+        }
+        TB_SendAckOK();
+      }
+      break;
+    case TB_CMD_GAP: // get axis parameter
+      if (TB_bufIn[TB_BUF_MOTOR] != 0) {
+     8a6:	80 91 ca 00 	lds	r24, 0x00CA
+     8aa:	88 23       	and	r24, r24
+     8ac:	41 f0       	breq	.+16     	; 0x8be <__stack+0x5f>
+        TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+     8ae:	40 e0       	ldi	r20, 0x00	; 0
+     8b0:	50 e0       	ldi	r21, 0x00	; 0
+     8b2:	ba 01       	movw	r22, r20
+     8b4:	84 e0       	ldi	r24, 0x04	; 4
+     8b6:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     8ba:	80 e0       	ldi	r24, 0x00	; 0
+     8bc:	74 c2       	rjmp	.+1256   	; 0xda6 <__stack+0x547>
+      break;
+    case TB_CMD_GAP: // get axis parameter
+      if (TB_bufIn[TB_BUF_MOTOR] != 0) {
+        TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+      } else {
+        switch (TB_bufIn[TB_BUF_TYPE]) {
+     8be:	80 91 c9 00 	lds	r24, 0x00C9
+     8c2:	86 30       	cpi	r24, 0x06	; 6
+     8c4:	61 f1       	breq	.+88     	; 0x91e <__stack+0xbf>
+     8c6:	38 f4       	brcc	.+14     	; 0x8d6 <__stack+0x77>
+     8c8:	84 30       	cpi	r24, 0x04	; 4
+     8ca:	09 f4       	brne	.+2      	; 0x8ce <__stack+0x6f>
+     8cc:	42 c0       	rjmp	.+132    	; 0x952 <__stack+0xf3>
+     8ce:	d0 f4       	brcc	.+52     	; 0x904 <__stack+0xa5>
+     8d0:	81 30       	cpi	r24, 0x01	; 1
+     8d2:	59 f0       	breq	.+22     	; 0x8ea <__stack+0x8b>
+     8d4:	62 c0       	rjmp	.+196    	; 0x99a <__stack+0x13b>
+     8d6:	8c 38       	cpi	r24, 0x8C	; 140
+     8d8:	09 f4       	brne	.+2      	; 0x8dc <__stack+0x7d>
+     8da:	48 c0       	rjmp	.+144    	; 0x96c <__stack+0x10d>
+     8dc:	84 3c       	cpi	r24, 0xC4	; 196
+     8de:	09 f4       	brne	.+2      	; 0x8e2 <__stack+0x83>
+     8e0:	4f c0       	rjmp	.+158    	; 0x980 <__stack+0x121>
+     8e2:	87 30       	cpi	r24, 0x07	; 7
+     8e4:	09 f0       	breq	.+2      	; 0x8e8 <__stack+0x89>
+     8e6:	59 c0       	rjmp	.+178    	; 0x99a <__stack+0x13b>
+     8e8:	27 c0       	rjmp	.+78     	; 0x938 <__stack+0xd9>
+          case TB_PARAM_ACTUAL_POSITION:
+            TB_SendAck(TB_ERR_OK, TB_param.actual_position);
+     8ea:	40 91 9a 00 	lds	r20, 0x009A
+     8ee:	50 91 9b 00 	lds	r21, 0x009B
+     8f2:	60 91 9c 00 	lds	r22, 0x009C
+     8f6:	70 91 9d 00 	lds	r23, 0x009D
+     8fa:	84 e6       	ldi	r24, 0x64	; 100
+     8fc:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     900:	80 e0       	ldi	r24, 0x00	; 0
+        TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+      } else {
+        switch (TB_bufIn[TB_BUF_TYPE]) {
+          case TB_PARAM_ACTUAL_POSITION:
+            TB_SendAck(TB_ERR_OK, TB_param.actual_position);
+            break;
+     902:	51 c2       	rjmp	.+1186   	; 0xda6 <__stack+0x547>
+          case TB_PARAM_ACCELERATION:
+            TB_SendAck(TB_ERR_OK, TB_param.acceleration);
+     904:	40 91 a2 00 	lds	r20, 0x00A2
+     908:	50 91 a3 00 	lds	r21, 0x00A3
+     90c:	60 91 a4 00 	lds	r22, 0x00A4
+     910:	70 91 a5 00 	lds	r23, 0x00A5
+     914:	84 e6       	ldi	r24, 0x64	; 100
+     916:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     91a:	80 e0       	ldi	r24, 0x00	; 0
+          case TB_PARAM_ACTUAL_POSITION:
+            TB_SendAck(TB_ERR_OK, TB_param.actual_position);
+            break;
+          case TB_PARAM_ACCELERATION:
+            TB_SendAck(TB_ERR_OK, TB_param.acceleration);
+            break;
+     91c:	44 c2       	rjmp	.+1160   	; 0xda6 <__stack+0x547>
+          case TB_PARAM_CURRENT_RUN:
+            TB_SendAck(TB_ERR_OK, TB_param.current);
+     91e:	40 91 a6 00 	lds	r20, 0x00A6
+     922:	50 91 a7 00 	lds	r21, 0x00A7
+     926:	60 91 a8 00 	lds	r22, 0x00A8
+     92a:	70 91 a9 00 	lds	r23, 0x00A9
+     92e:	84 e6       	ldi	r24, 0x64	; 100
+     930:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     934:	80 e0       	ldi	r24, 0x00	; 0
+          case TB_PARAM_ACCELERATION:
+            TB_SendAck(TB_ERR_OK, TB_param.acceleration);
+            break;
+          case TB_PARAM_CURRENT_RUN:
+            TB_SendAck(TB_ERR_OK, TB_param.current);
+            break;
+     936:	37 c2       	rjmp	.+1134   	; 0xda6 <__stack+0x547>
+          case TB_PARAM_CURRENT_HOLD:
+            TB_SendAck(TB_ERR_OK, TB_param.current_hold);
+     938:	40 91 aa 00 	lds	r20, 0x00AA
+     93c:	50 91 ab 00 	lds	r21, 0x00AB
+     940:	60 91 ac 00 	lds	r22, 0x00AC
+     944:	70 91 ad 00 	lds	r23, 0x00AD
+     948:	84 e6       	ldi	r24, 0x64	; 100
+     94a:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     94e:	80 e0       	ldi	r24, 0x00	; 0
+          case TB_PARAM_CURRENT_RUN:
+            TB_SendAck(TB_ERR_OK, TB_param.current);
+            break;
+          case TB_PARAM_CURRENT_HOLD:
+            TB_SendAck(TB_ERR_OK, TB_param.current_hold);
+            break;
+     950:	2a c2       	rjmp	.+1108   	; 0xda6 <__stack+0x547>
+          case TB_PARAM_SPEED:
+            TB_SendAck(TB_ERR_OK, TB_param.speed);
+     952:	40 91 9e 00 	lds	r20, 0x009E
+     956:	50 91 9f 00 	lds	r21, 0x009F
+     95a:	60 91 a0 00 	lds	r22, 0x00A0
+     95e:	70 91 a1 00 	lds	r23, 0x00A1
+     962:	84 e6       	ldi	r24, 0x64	; 100
+     964:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     968:	80 e0       	ldi	r24, 0x00	; 0
+          case TB_PARAM_CURRENT_HOLD:
+            TB_SendAck(TB_ERR_OK, TB_param.current_hold);
+            break;
+          case TB_PARAM_SPEED:
+            TB_SendAck(TB_ERR_OK, TB_param.speed);
+            break;
+     96a:	1d c2       	rjmp	.+1082   	; 0xda6 <__stack+0x547>
+          case TB_PARAM_RESOLUTION:
+            TB_SendAck(TB_ERR_OK, TB_param.resolution);
+     96c:	40 91 ae 00 	lds	r20, 0x00AE
+     970:	50 e0       	ldi	r21, 0x00	; 0
+     972:	60 e0       	ldi	r22, 0x00	; 0
+     974:	70 e0       	ldi	r23, 0x00	; 0
+     976:	84 e6       	ldi	r24, 0x64	; 100
+     978:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     97c:	80 e0       	ldi	r24, 0x00	; 0
+          case TB_PARAM_SPEED:
+            TB_SendAck(TB_ERR_OK, TB_param.speed);
+            break;
+          case TB_PARAM_RESOLUTION:
+            TB_SendAck(TB_ERR_OK, TB_param.resolution);
+            break;
+     97e:	13 c2       	rjmp	.+1062   	; 0xda6 <__stack+0x547>
+          case TB_PARAM_RFS_DISTANCE:
+            TB_SendAck(TB_ERR_OK, TB_param.rfs_distance);
+     980:	40 91 af 00 	lds	r20, 0x00AF
+     984:	50 91 b0 00 	lds	r21, 0x00B0
+     988:	60 91 b1 00 	lds	r22, 0x00B1
+     98c:	70 91 b2 00 	lds	r23, 0x00B2
+     990:	84 e6       	ldi	r24, 0x64	; 100
+     992:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     996:	80 e0       	ldi	r24, 0x00	; 0
+          case TB_PARAM_RESOLUTION:
+            TB_SendAck(TB_ERR_OK, TB_param.resolution);
+            break;
+          case TB_PARAM_RFS_DISTANCE:
+            TB_SendAck(TB_ERR_OK, TB_param.rfs_distance);
+            break;
+     998:	06 c2       	rjmp	.+1036   	; 0xda6 <__stack+0x547>
+// doplnit nastavitelné parametry
+          default:
+            TB_SendAck(TB_ERR_VALUE, 0);
+     99a:	40 e0       	ldi	r20, 0x00	; 0
+     99c:	50 e0       	ldi	r21, 0x00	; 0
+     99e:	ba 01       	movw	r22, r20
+     9a0:	84 e0       	ldi	r24, 0x04	; 4
+     9a2:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     9a6:	80 e0       	ldi	r24, 0x00	; 0
+            TB_SendAck(TB_ERR_OK, TB_param.rfs_distance);
+            break;
+// doplnit nastavitelné parametry
+          default:
+            TB_SendAck(TB_ERR_VALUE, 0);
+            break;
+     9a8:	fe c1       	rjmp	.+1020   	; 0xda6 <__stack+0x547>
+        }
+      }
+      break;
+    case TB_CMD_SIO:
+		switch (TB_bufIn[TB_BUF_MOTOR])
+     9aa:	20 91 ca 00 	lds	r18, 0x00CA
+     9ae:	21 30       	cpi	r18, 0x01	; 1
+     9b0:	09 f4       	brne	.+2      	; 0x9b4 <__stack+0x155>
+     9b2:	f6 c1       	rjmp	.+1004   	; 0xda0 <__stack+0x541>
+     9b4:	18 f0       	brcs	.+6      	; 0x9bc <__stack+0x15d>
+     9b6:	22 30       	cpi	r18, 0x02	; 2
+     9b8:	49 f0       	breq	.+18     	; 0x9cc <__stack+0x16d>
+     9ba:	54 c0       	rjmp	.+168    	; 0xa64 <__stack+0x205>
+		{
+	        case 0:
+				#ifdef TB_SIO_BANK_0_IMPLEMENTED
+					return TB_CMD_SIO;
+				#else
+					TB_SendAck(TB_ERR_TYPE, 0); // invalid value
+     9bc:	40 e0       	ldi	r20, 0x00	; 0
+     9be:	50 e0       	ldi	r21, 0x00	; 0
+     9c0:	ba 01       	movw	r22, r20
+     9c2:	83 e0       	ldi	r24, 0x03	; 3
+     9c4:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+				}
+				break;
+			default:
+				TB_SendAck(TB_ERR_TYPE, 0); // invalid value
+		}
+		return TB_CMD_SIO;
+     9c8:	8e e0       	ldi	r24, 0x0E	; 14
+				#ifdef TB_SIO_BANK_0_IMPLEMENTED
+					return TB_CMD_SIO;
+				#else
+					TB_SendAck(TB_ERR_TYPE, 0); // invalid value
+				#endif
+				break;
+     9ca:	ed c1       	rjmp	.+986    	; 0xda6 <__stack+0x547>
+				#else
+					TB_SendAck(TB_ERR_TYPE, 0); // invalid value
+				#endif
+				break;
+			case 2:
+				switch (TB_bufIn[TB_BUF_TYPE])
+     9cc:	20 91 c9 00 	lds	r18, 0x00C9
+     9d0:	21 30       	cpi	r18, 0x01	; 1
+     9d2:	c1 f0       	breq	.+48     	; 0xa04 <__stack+0x1a5>
+     9d4:	18 f0       	brcs	.+6      	; 0x9dc <__stack+0x17d>
+     9d6:	22 30       	cpi	r18, 0x02	; 2
+     9d8:	49 f1       	breq	.+82     	; 0xa2c <__stack+0x1cd>
+     9da:	3c c0       	rjmp	.+120    	; 0xa54 <__stack+0x1f5>
+				{
+					case 0:
+						TB_out.b0 = (TB_Value != 0);
+     9dc:	21 e0       	ldi	r18, 0x01	; 1
+     9de:	67 2b       	or	r22, r23
+     9e0:	68 2b       	or	r22, r24
+     9e2:	69 2b       	or	r22, r25
+     9e4:	09 f4       	brne	.+2      	; 0x9e8 <__stack+0x189>
+     9e6:	20 e0       	ldi	r18, 0x00	; 0
+     9e8:	80 91 95 00 	lds	r24, 0x0095
+     9ec:	20 fb       	bst	r18, 0
+     9ee:	80 f9       	bld	r24, 0
+     9f0:	80 93 95 00 	sts	0x0095, r24
+
+/******************************************************/
+// send OK response from module
+inline void TB_SendAckOK(void)
+{
+  TB_SendAck(100, 0);
+     9f4:	40 e0       	ldi	r20, 0x00	; 0
+     9f6:	50 e0       	ldi	r21, 0x00	; 0
+     9f8:	ba 01       	movw	r22, r20
+     9fa:	84 e6       	ldi	r24, 0x64	; 100
+     9fc:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+				}
+				break;
+			default:
+				TB_SendAck(TB_ERR_TYPE, 0); // invalid value
+		}
+		return TB_CMD_SIO;
+     a00:	8e e0       	ldi	r24, 0x0E	; 14
+     a02:	d1 c1       	rjmp	.+930    	; 0xda6 <__stack+0x547>
+					case 0:
+						TB_out.b0 = (TB_Value != 0);
+						TB_SendAckOK();
+						break;
+					case 1:
+						TB_out.b1 = (TB_Value != 0);
+     a04:	21 e0       	ldi	r18, 0x01	; 1
+     a06:	67 2b       	or	r22, r23
+     a08:	68 2b       	or	r22, r24
+     a0a:	69 2b       	or	r22, r25
+     a0c:	09 f4       	brne	.+2      	; 0xa10 <__stack+0x1b1>
+     a0e:	20 e0       	ldi	r18, 0x00	; 0
+     a10:	80 91 95 00 	lds	r24, 0x0095
+     a14:	20 fb       	bst	r18, 0
+     a16:	81 f9       	bld	r24, 1
+     a18:	80 93 95 00 	sts	0x0095, r24
+
+/******************************************************/
+// send OK response from module
+inline void TB_SendAckOK(void)
+{
+  TB_SendAck(100, 0);
+     a1c:	40 e0       	ldi	r20, 0x00	; 0
+     a1e:	50 e0       	ldi	r21, 0x00	; 0
+     a20:	ba 01       	movw	r22, r20
+     a22:	84 e6       	ldi	r24, 0x64	; 100
+     a24:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+				}
+				break;
+			default:
+				TB_SendAck(TB_ERR_TYPE, 0); // invalid value
+		}
+		return TB_CMD_SIO;
+     a28:	8e e0       	ldi	r24, 0x0E	; 14
+     a2a:	bd c1       	rjmp	.+890    	; 0xda6 <__stack+0x547>
+					case 1:
+						TB_out.b1 = (TB_Value != 0);
+						TB_SendAckOK();
+						break;
+					case 2:
+						TB_out.b2 = (TB_Value != 0);
+     a2c:	21 e0       	ldi	r18, 0x01	; 1
+     a2e:	67 2b       	or	r22, r23
+     a30:	68 2b       	or	r22, r24
+     a32:	69 2b       	or	r22, r25
+     a34:	09 f4       	brne	.+2      	; 0xa38 <__stack+0x1d9>
+     a36:	20 e0       	ldi	r18, 0x00	; 0
+     a38:	80 91 95 00 	lds	r24, 0x0095
+     a3c:	20 fb       	bst	r18, 0
+     a3e:	82 f9       	bld	r24, 2
+     a40:	80 93 95 00 	sts	0x0095, r24
+
+/******************************************************/
+// send OK response from module
+inline void TB_SendAckOK(void)
+{
+  TB_SendAck(100, 0);
+     a44:	40 e0       	ldi	r20, 0x00	; 0
+     a46:	50 e0       	ldi	r21, 0x00	; 0
+     a48:	ba 01       	movw	r22, r20
+     a4a:	84 e6       	ldi	r24, 0x64	; 100
+     a4c:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+				}
+				break;
+			default:
+				TB_SendAck(TB_ERR_TYPE, 0); // invalid value
+		}
+		return TB_CMD_SIO;
+     a50:	8e e0       	ldi	r24, 0x0E	; 14
+     a52:	a9 c1       	rjmp	.+850    	; 0xda6 <__stack+0x547>
+					case 2:
+						TB_out.b2 = (TB_Value != 0);
+						TB_SendAckOK();
+						break;
+					default:
+						TB_SendAck(TB_ERR_TYPE, 0); // invalid value
+     a54:	40 e0       	ldi	r20, 0x00	; 0
+     a56:	50 e0       	ldi	r21, 0x00	; 0
+     a58:	ba 01       	movw	r22, r20
+     a5a:	83 e0       	ldi	r24, 0x03	; 3
+     a5c:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+				}
+				break;
+			default:
+				TB_SendAck(TB_ERR_TYPE, 0); // invalid value
+		}
+		return TB_CMD_SIO;
+     a60:	8e e0       	ldi	r24, 0x0E	; 14
+						TB_out.b2 = (TB_Value != 0);
+						TB_SendAckOK();
+						break;
+					default:
+						TB_SendAck(TB_ERR_TYPE, 0); // invalid value
+					break;
+     a62:	a1 c1       	rjmp	.+834    	; 0xda6 <__stack+0x547>
+				}
+				break;
+			default:
+				TB_SendAck(TB_ERR_TYPE, 0); // invalid value
+     a64:	40 e0       	ldi	r20, 0x00	; 0
+     a66:	50 e0       	ldi	r21, 0x00	; 0
+     a68:	ba 01       	movw	r22, r20
+     a6a:	83 e0       	ldi	r24, 0x03	; 3
+     a6c:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+		}
+		return TB_CMD_SIO;
+     a70:	8e e0       	ldi	r24, 0x0E	; 14
+     a72:	99 c1       	rjmp	.+818    	; 0xda6 <__stack+0x547>
+		break;
+    case TB_CMD_GIO:
+		switch (TB_bufIn[TB_BUF_MOTOR])
+     a74:	80 91 ca 00 	lds	r24, 0x00CA
+     a78:	81 30       	cpi	r24, 0x01	; 1
+     a7a:	29 f0       	breq	.+10     	; 0xa86 <__stack+0x227>
+     a7c:	30 f0       	brcs	.+12     	; 0xa8a <__stack+0x22b>
+     a7e:	82 30       	cpi	r24, 0x02	; 2
+     a80:	09 f4       	brne	.+2      	; 0xa84 <__stack+0x225>
+     a82:	46 c0       	rjmp	.+140    	; 0xb10 <__stack+0x2b1>
+     a84:	8f c1       	rjmp	.+798    	; 0xda4 <__stack+0x545>
+						break;
+				}
+				break;
+			case 1: // analog inputs (2)
+				//TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+				return TB_CMD_GIO;
+     a86:	8f e0       	ldi	r24, 0x0F	; 15
+     a88:	8e c1       	rjmp	.+796    	; 0xda6 <__stack+0x547>
+		break;
+    case TB_CMD_GIO:
+		switch (TB_bufIn[TB_BUF_MOTOR])
+		{
+			case 0: // inputs (4)
+				switch (TB_bufIn[TB_BUF_TYPE])
+     a8a:	80 91 c9 00 	lds	r24, 0x00C9
+     a8e:	81 30       	cpi	r24, 0x01	; 1
+     a90:	89 f0       	breq	.+34     	; 0xab4 <__stack+0x255>
+     a92:	28 f0       	brcs	.+10     	; 0xa9e <__stack+0x23f>
+     a94:	82 30       	cpi	r24, 0x02	; 2
+     a96:	d1 f0       	breq	.+52     	; 0xacc <__stack+0x26d>
+     a98:	83 30       	cpi	r24, 0x03	; 3
+     a9a:	29 f1       	breq	.+74     	; 0xae6 <__stack+0x287>
+     a9c:	31 c0       	rjmp	.+98     	; 0xb00 <__stack+0x2a1>
+				{
+					case 0:
+						TB_SendAck(TB_ERR_OK, TB_inp.b0);
+     a9e:	40 91 c5 00 	lds	r20, 0x00C5
+     aa2:	41 70       	andi	r20, 0x01	; 1
+     aa4:	50 e0       	ldi	r21, 0x00	; 0
+     aa6:	60 e0       	ldi	r22, 0x00	; 0
+     aa8:	70 e0       	ldi	r23, 0x00	; 0
+     aaa:	84 e6       	ldi	r24, 0x64	; 100
+     aac:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     ab0:	80 e0       	ldi	r24, 0x00	; 0
+			case 0: // inputs (4)
+				switch (TB_bufIn[TB_BUF_TYPE])
+				{
+					case 0:
+						TB_SendAck(TB_ERR_OK, TB_inp.b0);
+						break;
+     ab2:	79 c1       	rjmp	.+754    	; 0xda6 <__stack+0x547>
+		            case 1:
+						TB_SendAck(TB_ERR_OK, TB_inp.b1);
+     ab4:	40 91 c5 00 	lds	r20, 0x00C5
+     ab8:	46 95       	lsr	r20
+     aba:	41 70       	andi	r20, 0x01	; 1
+     abc:	50 e0       	ldi	r21, 0x00	; 0
+     abe:	60 e0       	ldi	r22, 0x00	; 0
+     ac0:	70 e0       	ldi	r23, 0x00	; 0
+     ac2:	84 e6       	ldi	r24, 0x64	; 100
+     ac4:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     ac8:	80 e0       	ldi	r24, 0x00	; 0
+					case 0:
+						TB_SendAck(TB_ERR_OK, TB_inp.b0);
+						break;
+		            case 1:
+						TB_SendAck(TB_ERR_OK, TB_inp.b1);
+						break;
+     aca:	6d c1       	rjmp	.+730    	; 0xda6 <__stack+0x547>
+					case 2:
+						TB_SendAck(TB_ERR_OK, TB_inp.b2);
+     acc:	40 91 c5 00 	lds	r20, 0x00C5
+     ad0:	42 fb       	bst	r20, 2
+     ad2:	44 27       	eor	r20, r20
+     ad4:	40 f9       	bld	r20, 0
+     ad6:	50 e0       	ldi	r21, 0x00	; 0
+     ad8:	60 e0       	ldi	r22, 0x00	; 0
+     ada:	70 e0       	ldi	r23, 0x00	; 0
+     adc:	84 e6       	ldi	r24, 0x64	; 100
+     ade:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     ae2:	80 e0       	ldi	r24, 0x00	; 0
+		            case 1:
+						TB_SendAck(TB_ERR_OK, TB_inp.b1);
+						break;
+					case 2:
+						TB_SendAck(TB_ERR_OK, TB_inp.b2);
+						break;
+     ae4:	60 c1       	rjmp	.+704    	; 0xda6 <__stack+0x547>
+					case 3:
+						TB_SendAck(TB_ERR_OK, TB_inp.b3);
+     ae6:	40 91 c5 00 	lds	r20, 0x00C5
+     aea:	43 fb       	bst	r20, 3
+     aec:	44 27       	eor	r20, r20
+     aee:	40 f9       	bld	r20, 0
+     af0:	50 e0       	ldi	r21, 0x00	; 0
+     af2:	60 e0       	ldi	r22, 0x00	; 0
+     af4:	70 e0       	ldi	r23, 0x00	; 0
+     af6:	84 e6       	ldi	r24, 0x64	; 100
+     af8:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     afc:	80 e0       	ldi	r24, 0x00	; 0
+					case 2:
+						TB_SendAck(TB_ERR_OK, TB_inp.b2);
+						break;
+					case 3:
+						TB_SendAck(TB_ERR_OK, TB_inp.b3);
+						break;
+     afe:	53 c1       	rjmp	.+678    	; 0xda6 <__stack+0x547>
+					default:
+						TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+     b00:	40 e0       	ldi	r20, 0x00	; 0
+     b02:	50 e0       	ldi	r21, 0x00	; 0
+     b04:	ba 01       	movw	r22, r20
+     b06:	84 e0       	ldi	r24, 0x04	; 4
+     b08:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     b0c:	80 e0       	ldi	r24, 0x00	; 0
+					case 3:
+						TB_SendAck(TB_ERR_OK, TB_inp.b3);
+						break;
+					default:
+						TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+						break;
+     b0e:	4b c1       	rjmp	.+662    	; 0xda6 <__stack+0x547>
+			case 1: // analog inputs (2)
+				//TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+				return TB_CMD_GIO;
+				break;
+			case 2: // outputs (2);
+				switch (TB_bufIn[TB_BUF_TYPE])
+     b10:	80 91 c9 00 	lds	r24, 0x00C9
+     b14:	88 23       	and	r24, r24
+     b16:	19 f0       	breq	.+6      	; 0xb1e <__stack+0x2bf>
+     b18:	81 30       	cpi	r24, 0x01	; 1
+     b1a:	61 f0       	breq	.+24     	; 0xb34 <__stack+0x2d5>
+     b1c:	17 c0       	rjmp	.+46     	; 0xb4c <__stack+0x2ed>
+				{
+					case 0:
+						TB_SendAck(TB_ERR_OK, TB_out.b0);
+     b1e:	40 91 95 00 	lds	r20, 0x0095
+     b22:	41 70       	andi	r20, 0x01	; 1
+     b24:	50 e0       	ldi	r21, 0x00	; 0
+     b26:	60 e0       	ldi	r22, 0x00	; 0
+     b28:	70 e0       	ldi	r23, 0x00	; 0
+     b2a:	84 e6       	ldi	r24, 0x64	; 100
+     b2c:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     b30:	80 e0       	ldi	r24, 0x00	; 0
+			case 2: // outputs (2);
+				switch (TB_bufIn[TB_BUF_TYPE])
+				{
+					case 0:
+						TB_SendAck(TB_ERR_OK, TB_out.b0);
+						break;
+     b32:	39 c1       	rjmp	.+626    	; 0xda6 <__stack+0x547>
+					case 1:
+						TB_SendAck(TB_ERR_OK, TB_out.b1);
+     b34:	40 91 95 00 	lds	r20, 0x0095
+     b38:	46 95       	lsr	r20
+     b3a:	41 70       	andi	r20, 0x01	; 1
+     b3c:	50 e0       	ldi	r21, 0x00	; 0
+     b3e:	60 e0       	ldi	r22, 0x00	; 0
+     b40:	70 e0       	ldi	r23, 0x00	; 0
+     b42:	84 e6       	ldi	r24, 0x64	; 100
+     b44:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     b48:	80 e0       	ldi	r24, 0x00	; 0
+					case 0:
+						TB_SendAck(TB_ERR_OK, TB_out.b0);
+						break;
+					case 1:
+						TB_SendAck(TB_ERR_OK, TB_out.b1);
+						break;
+     b4a:	2d c1       	rjmp	.+602    	; 0xda6 <__stack+0x547>
+					default:
+						TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+     b4c:	40 e0       	ldi	r20, 0x00	; 0
+     b4e:	50 e0       	ldi	r21, 0x00	; 0
+     b50:	ba 01       	movw	r22, r20
+     b52:	84 e0       	ldi	r24, 0x04	; 4
+     b54:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     b58:	80 e0       	ldi	r24, 0x00	; 0
+					case 1:
+						TB_SendAck(TB_ERR_OK, TB_out.b1);
+						break;
+					default:
+						TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+						break;
+     b5a:	25 c1       	rjmp	.+586    	; 0xda6 <__stack+0x547>
+				break;
+			default:
+				TB_SendAck(TB_ERR_VALUE, TB_bufIn[TB_BUF_MOTOR]); // invalid value
+				break;
+		}*/
+		return TB_CMD_VENTIL;
+     b5c:	80 e1       	ldi	r24, 0x10	; 16
+     b5e:	23 c1       	rjmp	.+582    	; 0xda6 <__stack+0x547>
+		break;
+    case TB_CMD_RFS:
+		return TB_CMD_RFS;
+     b60:	8d e0       	ldi	r24, 0x0D	; 13
+     b62:	21 c1       	rjmp	.+578    	; 0xda6 <__stack+0x547>
+		break;
+    case TB_CMD_SGP:
+		if (TB_bufIn[TB_BUF_MOTOR] != 0)
+     b64:	20 91 ca 00 	lds	r18, 0x00CA
+     b68:	22 23       	and	r18, r18
+     b6a:	41 f0       	breq	.+16     	; 0xb7c <__stack+0x31d>
+		{
+			TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+     b6c:	40 e0       	ldi	r20, 0x00	; 0
+     b6e:	50 e0       	ldi	r21, 0x00	; 0
+     b70:	ba 01       	movw	r22, r20
+     b72:	84 e0       	ldi	r24, 0x04	; 4
+     b74:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     b78:	80 e0       	ldi	r24, 0x00	; 0
+     b7a:	15 c1       	rjmp	.+554    	; 0xda6 <__stack+0x547>
+		{
+			TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+		}
+		else
+		{
+			switch (TB_bufIn[TB_BUF_TYPE])
+     b7c:	20 91 c9 00 	lds	r18, 0x00C9
+     b80:	21 34       	cpi	r18, 0x41	; 65
+     b82:	51 f1       	breq	.+84     	; 0xbd8 <__stack+0x379>
+     b84:	18 f4       	brcc	.+6      	; 0xb8c <__stack+0x32d>
+     b86:	20 34       	cpi	r18, 0x40	; 64
+     b88:	41 f0       	breq	.+16     	; 0xb9a <__stack+0x33b>
+     b8a:	86 c0       	rjmp	.+268    	; 0xc98 <__stack+0x439>
+     b8c:	22 34       	cpi	r18, 0x42	; 66
+     b8e:	09 f4       	brne	.+2      	; 0xb92 <__stack+0x333>
+     b90:	43 c0       	rjmp	.+134    	; 0xc18 <__stack+0x3b9>
+     b92:	2c 34       	cpi	r18, 0x4C	; 76
+     b94:	09 f4       	brne	.+2      	; 0xb98 <__stack+0x339>
+     b96:	60 c0       	rjmp	.+192    	; 0xc58 <__stack+0x3f9>
+     b98:	7f c0       	rjmp	.+254    	; 0xc98 <__stack+0x439>
+			{
+				case TB_GBPARAM_EEMAGIC:
+					if (TB_Value != TB_gbparam.eemagic)
+     b9a:	00 91 c0 00 	lds	r16, 0x00C0
+     b9e:	10 e0       	ldi	r17, 0x00	; 0
+     ba0:	20 e0       	ldi	r18, 0x00	; 0
+     ba2:	30 e0       	ldi	r19, 0x00	; 0
+     ba4:	60 17       	cp	r22, r16
+     ba6:	71 07       	cpc	r23, r17
+     ba8:	82 07       	cpc	r24, r18
+     baa:	93 07       	cpc	r25, r19
+     bac:	69 f0       	breq	.+26     	; 0xbc8 <__stack+0x369>
+					{
+						TB_gbparam.eemagic = TB_Value;
+     bae:	60 93 c0 00 	sts	0x00C0, r22
+						b = (void *) &(TB_gbparam.eemagic) - (void *) &(TB_gbparam);
+     bb2:	19 82       	std	Y+1, r1	; 0x01
+						eeprom_update_byte(b+addr_setting_in_eeprom, TB_gbparam.eemagic);
+     bb4:	49 81       	ldd	r20, Y+1	; 0x01
+     bb6:	20 91 d0 00 	lds	r18, 0x00D0
+     bba:	30 91 d1 00 	lds	r19, 0x00D1
+     bbe:	c9 01       	movw	r24, r18
+     bc0:	84 0f       	add	r24, r20
+     bc2:	91 1d       	adc	r25, r1
+     bc4:	0e 94 ca 08 	call	0x1194	; 0x1194 <__eeupd_byte_m32>
+					}
+					TB_SendAck(TB_ERR_OK, 0);
+     bc8:	40 e0       	ldi	r20, 0x00	; 0
+     bca:	50 e0       	ldi	r21, 0x00	; 0
+     bcc:	ba 01       	movw	r22, r20
+     bce:	84 e6       	ldi	r24, 0x64	; 100
+     bd0:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     bd4:	80 e0       	ldi	r24, 0x00	; 0
+						TB_gbparam.eemagic = TB_Value;
+						b = (void *) &(TB_gbparam.eemagic) - (void *) &(TB_gbparam);
+						eeprom_update_byte(b+addr_setting_in_eeprom, TB_gbparam.eemagic);
+					}
+					TB_SendAck(TB_ERR_OK, 0);
+					break;
+     bd6:	e7 c0       	rjmp	.+462    	; 0xda6 <__stack+0x547>
+				case TB_GBPARAM_BAUD:
+					if (TB_Value != TB_gbparam.baud)
+     bd8:	00 91 c1 00 	lds	r16, 0x00C1
+     bdc:	10 e0       	ldi	r17, 0x00	; 0
+     bde:	20 e0       	ldi	r18, 0x00	; 0
+     be0:	30 e0       	ldi	r19, 0x00	; 0
+     be2:	60 17       	cp	r22, r16
+     be4:	71 07       	cpc	r23, r17
+     be6:	82 07       	cpc	r24, r18
+     be8:	93 07       	cpc	r25, r19
+     bea:	71 f0       	breq	.+28     	; 0xc08 <__stack+0x3a9>
+					{
+						TB_gbparam.baud = TB_Value;
+     bec:	60 93 c1 00 	sts	0x00C1, r22
+						b = (void *) &(TB_gbparam.baud) - (void *) &(TB_gbparam);
+     bf0:	21 e0       	ldi	r18, 0x01	; 1
+     bf2:	29 83       	std	Y+1, r18	; 0x01
+						eeprom_update_byte(b+addr_setting_in_eeprom, TB_gbparam.baud);
+     bf4:	49 81       	ldd	r20, Y+1	; 0x01
+     bf6:	20 91 d0 00 	lds	r18, 0x00D0
+     bfa:	30 91 d1 00 	lds	r19, 0x00D1
+     bfe:	c9 01       	movw	r24, r18
+     c00:	84 0f       	add	r24, r20
+     c02:	91 1d       	adc	r25, r1
+     c04:	0e 94 ca 08 	call	0x1194	; 0x1194 <__eeupd_byte_m32>
+					}
+					TB_SendAck(TB_ERR_OK, 0);
+     c08:	40 e0       	ldi	r20, 0x00	; 0
+     c0a:	50 e0       	ldi	r21, 0x00	; 0
+     c0c:	ba 01       	movw	r22, r20
+     c0e:	84 e6       	ldi	r24, 0x64	; 100
+     c10:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     c14:	80 e0       	ldi	r24, 0x00	; 0
+						TB_gbparam.baud = TB_Value;
+						b = (void *) &(TB_gbparam.baud) - (void *) &(TB_gbparam);
+						eeprom_update_byte(b+addr_setting_in_eeprom, TB_gbparam.baud);
+					}
+					TB_SendAck(TB_ERR_OK, 0);
+					break;
+     c16:	c7 c0       	rjmp	.+398    	; 0xda6 <__stack+0x547>
+				case TB_GBPARAM_ADDRESS:
+					if (TB_Value != TB_gbparam.address)
+     c18:	00 91 c2 00 	lds	r16, 0x00C2
+     c1c:	10 e0       	ldi	r17, 0x00	; 0
+     c1e:	20 e0       	ldi	r18, 0x00	; 0
+     c20:	30 e0       	ldi	r19, 0x00	; 0
+     c22:	60 17       	cp	r22, r16
+     c24:	71 07       	cpc	r23, r17
+     c26:	82 07       	cpc	r24, r18
+     c28:	93 07       	cpc	r25, r19
+     c2a:	71 f0       	breq	.+28     	; 0xc48 <__stack+0x3e9>
+					{
+						TB_gbparam.address = TB_Value;
+     c2c:	60 93 c2 00 	sts	0x00C2, r22
+				        b = (void *) &(TB_gbparam.address) - (void *) &(TB_gbparam);
+     c30:	22 e0       	ldi	r18, 0x02	; 2
+     c32:	29 83       	std	Y+1, r18	; 0x01
+						eeprom_update_byte(b+addr_setting_in_eeprom, TB_gbparam.address);
+     c34:	49 81       	ldd	r20, Y+1	; 0x01
+     c36:	20 91 d0 00 	lds	r18, 0x00D0
+     c3a:	30 91 d1 00 	lds	r19, 0x00D1
+     c3e:	c9 01       	movw	r24, r18
+     c40:	84 0f       	add	r24, r20
+     c42:	91 1d       	adc	r25, r1
+     c44:	0e 94 ca 08 	call	0x1194	; 0x1194 <__eeupd_byte_m32>
+					}
+					TB_SendAck(TB_ERR_OK, 0);
+     c48:	40 e0       	ldi	r20, 0x00	; 0
+     c4a:	50 e0       	ldi	r21, 0x00	; 0
+     c4c:	ba 01       	movw	r22, r20
+     c4e:	84 e6       	ldi	r24, 0x64	; 100
+     c50:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     c54:	80 e0       	ldi	r24, 0x00	; 0
+						TB_gbparam.address = TB_Value;
+				        b = (void *) &(TB_gbparam.address) - (void *) &(TB_gbparam);
+						eeprom_update_byte(b+addr_setting_in_eeprom, TB_gbparam.address);
+					}
+					TB_SendAck(TB_ERR_OK, 0);
+					break;
+     c56:	a7 c0       	rjmp	.+334    	; 0xda6 <__stack+0x547>
+				case TB_GBPARAM_HOST_ADDR:
+					if (TB_Value != TB_gbparam.host_address)
+     c58:	00 91 c4 00 	lds	r16, 0x00C4
+     c5c:	10 e0       	ldi	r17, 0x00	; 0
+     c5e:	20 e0       	ldi	r18, 0x00	; 0
+     c60:	30 e0       	ldi	r19, 0x00	; 0
+     c62:	60 17       	cp	r22, r16
+     c64:	71 07       	cpc	r23, r17
+     c66:	82 07       	cpc	r24, r18
+     c68:	93 07       	cpc	r25, r19
+     c6a:	71 f0       	breq	.+28     	; 0xc88 <__stack+0x429>
+					{
+						TB_gbparam.host_address = TB_Value;
+     c6c:	60 93 c4 00 	sts	0x00C4, r22
+						b = (void *) &(TB_gbparam.host_address) - (void *) &(TB_gbparam);
+     c70:	24 e0       	ldi	r18, 0x04	; 4
+     c72:	29 83       	std	Y+1, r18	; 0x01
+						eeprom_update_byte(b+addr_setting_in_eeprom, TB_gbparam.host_address);
+     c74:	49 81       	ldd	r20, Y+1	; 0x01
+     c76:	20 91 d0 00 	lds	r18, 0x00D0
+     c7a:	30 91 d1 00 	lds	r19, 0x00D1
+     c7e:	c9 01       	movw	r24, r18
+     c80:	84 0f       	add	r24, r20
+     c82:	91 1d       	adc	r25, r1
+     c84:	0e 94 ca 08 	call	0x1194	; 0x1194 <__eeupd_byte_m32>
+					}
+					TB_SendAck(TB_ERR_OK, 0);
+     c88:	40 e0       	ldi	r20, 0x00	; 0
+     c8a:	50 e0       	ldi	r21, 0x00	; 0
+     c8c:	ba 01       	movw	r22, r20
+     c8e:	84 e6       	ldi	r24, 0x64	; 100
+     c90:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     c94:	80 e0       	ldi	r24, 0x00	; 0
+						TB_gbparam.host_address = TB_Value;
+						b = (void *) &(TB_gbparam.host_address) - (void *) &(TB_gbparam);
+						eeprom_update_byte(b+addr_setting_in_eeprom, TB_gbparam.host_address);
+					}
+					TB_SendAck(TB_ERR_OK, 0);
+					break;
+     c96:	87 c0       	rjmp	.+270    	; 0xda6 <__stack+0x547>
+				default:
+					TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+     c98:	40 e0       	ldi	r20, 0x00	; 0
+     c9a:	50 e0       	ldi	r21, 0x00	; 0
+     c9c:	ba 01       	movw	r22, r20
+     c9e:	84 e0       	ldi	r24, 0x04	; 4
+     ca0:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     ca4:	80 e0       	ldi	r24, 0x00	; 0
+					}
+					TB_SendAck(TB_ERR_OK, 0);
+					break;
+				default:
+					TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+					break;
+     ca6:	7f c0       	rjmp	.+254    	; 0xda6 <__stack+0x547>
+			}
+      }
+      break;
+    case TB_CMD_GGP:
+      if (TB_bufIn[TB_BUF_MOTOR] != 0) {
+     ca8:	80 91 ca 00 	lds	r24, 0x00CA
+     cac:	88 23       	and	r24, r24
+     cae:	41 f0       	breq	.+16     	; 0xcc0 <__stack+0x461>
+        TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+     cb0:	40 e0       	ldi	r20, 0x00	; 0
+     cb2:	50 e0       	ldi	r21, 0x00	; 0
+     cb4:	ba 01       	movw	r22, r20
+     cb6:	84 e0       	ldi	r24, 0x04	; 4
+     cb8:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     cbc:	80 e0       	ldi	r24, 0x00	; 0
+     cbe:	73 c0       	rjmp	.+230    	; 0xda6 <__stack+0x547>
+      break;
+    case TB_CMD_GGP:
+      if (TB_bufIn[TB_BUF_MOTOR] != 0) {
+        TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+      } else {
+        switch (TB_bufIn[TB_BUF_TYPE]) {
+     cc0:	80 91 c9 00 	lds	r24, 0x00C9
+     cc4:	81 34       	cpi	r24, 0x41	; 65
+     cc6:	49 f0       	breq	.+18     	; 0xcda <__stack+0x47b>
+     cc8:	18 f4       	brcc	.+6      	; 0xcd0 <__stack+0x471>
+     cca:	80 34       	cpi	r24, 0x40	; 64
+     ccc:	21 f1       	breq	.+72     	; 0xd16 <__stack+0x4b7>
+     cce:	2d c0       	rjmp	.+90     	; 0xd2a <__stack+0x4cb>
+     cd0:	82 34       	cpi	r24, 0x42	; 66
+     cd2:	69 f0       	breq	.+26     	; 0xcee <__stack+0x48f>
+     cd4:	8c 34       	cpi	r24, 0x4C	; 76
+     cd6:	a9 f0       	breq	.+42     	; 0xd02 <__stack+0x4a3>
+     cd8:	28 c0       	rjmp	.+80     	; 0xd2a <__stack+0x4cb>
+          case TB_GBPARAM_BAUD:
+            TB_SendAck(TB_ERR_OK, TB_gbparam.baud);
+     cda:	40 91 c1 00 	lds	r20, 0x00C1
+     cde:	50 e0       	ldi	r21, 0x00	; 0
+     ce0:	60 e0       	ldi	r22, 0x00	; 0
+     ce2:	70 e0       	ldi	r23, 0x00	; 0
+     ce4:	84 e6       	ldi	r24, 0x64	; 100
+     ce6:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     cea:	80 e0       	ldi	r24, 0x00	; 0
+        TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+      } else {
+        switch (TB_bufIn[TB_BUF_TYPE]) {
+          case TB_GBPARAM_BAUD:
+            TB_SendAck(TB_ERR_OK, TB_gbparam.baud);
+            break;
+     cec:	5c c0       	rjmp	.+184    	; 0xda6 <__stack+0x547>
+          case TB_GBPARAM_ADDRESS:
+            TB_SendAck(TB_ERR_OK, TB_gbparam.address);
+     cee:	40 91 c2 00 	lds	r20, 0x00C2
+     cf2:	50 e0       	ldi	r21, 0x00	; 0
+     cf4:	60 e0       	ldi	r22, 0x00	; 0
+     cf6:	70 e0       	ldi	r23, 0x00	; 0
+     cf8:	84 e6       	ldi	r24, 0x64	; 100
+     cfa:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     cfe:	80 e0       	ldi	r24, 0x00	; 0
+          case TB_GBPARAM_BAUD:
+            TB_SendAck(TB_ERR_OK, TB_gbparam.baud);
+            break;
+          case TB_GBPARAM_ADDRESS:
+            TB_SendAck(TB_ERR_OK, TB_gbparam.address);
+            break;
+     d00:	52 c0       	rjmp	.+164    	; 0xda6 <__stack+0x547>
+          case TB_GBPARAM_HOST_ADDR:
+            TB_SendAck(TB_ERR_OK, TB_gbparam.host_address);
+     d02:	40 91 c4 00 	lds	r20, 0x00C4
+     d06:	50 e0       	ldi	r21, 0x00	; 0
+     d08:	60 e0       	ldi	r22, 0x00	; 0
+     d0a:	70 e0       	ldi	r23, 0x00	; 0
+     d0c:	84 e6       	ldi	r24, 0x64	; 100
+     d0e:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     d12:	80 e0       	ldi	r24, 0x00	; 0
+          case TB_GBPARAM_ADDRESS:
+            TB_SendAck(TB_ERR_OK, TB_gbparam.address);
+            break;
+          case TB_GBPARAM_HOST_ADDR:
+            TB_SendAck(TB_ERR_OK, TB_gbparam.host_address);
+            break;
+     d14:	48 c0       	rjmp	.+144    	; 0xda6 <__stack+0x547>
+          case TB_GBPARAM_EEMAGIC:
+            TB_SendAck(TB_ERR_OK, TB_gbparam.eemagic);
+     d16:	40 91 c0 00 	lds	r20, 0x00C0
+     d1a:	50 e0       	ldi	r21, 0x00	; 0
+     d1c:	60 e0       	ldi	r22, 0x00	; 0
+     d1e:	70 e0       	ldi	r23, 0x00	; 0
+     d20:	84 e6       	ldi	r24, 0x64	; 100
+     d22:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     d26:	80 e0       	ldi	r24, 0x00	; 0
+          case TB_GBPARAM_HOST_ADDR:
+            TB_SendAck(TB_ERR_OK, TB_gbparam.host_address);
+            break;
+          case TB_GBPARAM_EEMAGIC:
+            TB_SendAck(TB_ERR_OK, TB_gbparam.eemagic);
+            break;
+     d28:	3e c0       	rjmp	.+124    	; 0xda6 <__stack+0x547>
+          default:
+            TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+     d2a:	40 e0       	ldi	r20, 0x00	; 0
+     d2c:	50 e0       	ldi	r21, 0x00	; 0
+     d2e:	ba 01       	movw	r22, r20
+     d30:	84 e0       	ldi	r24, 0x04	; 4
+     d32:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     d36:	80 e0       	ldi	r24, 0x00	; 0
+          case TB_GBPARAM_EEMAGIC:
+            TB_SendAck(TB_ERR_OK, TB_gbparam.eemagic);
+            break;
+          default:
+            TB_SendAck(TB_ERR_VALUE, 0); // invalid value
+            break;
+     d38:	36 c0       	rjmp	.+108    	; 0xda6 <__stack+0x547>
+        }
+      }
+      break;
+    case 136: // get module version
+      if (TB_bufIn[TB_BUF_TYPE] == 0) {
+     d3a:	80 91 c9 00 	lds	r24, 0x00C9
+     d3e:	81 11       	cpse	r24, r1
+     d40:	1c c0       	rjmp	.+56     	; 0xd7a <__stack+0x51b>
+        // text mode
+        TB_bufOut[0] = TB_AddrReply;
+     d42:	80 91 d2 00 	lds	r24, 0x00D2
+     d46:	80 93 b7 00 	sts	0x00B7, r24
+        TB_bufOut[1] = '1';
+     d4a:	81 e3       	ldi	r24, 0x31	; 49
+     d4c:	80 93 b8 00 	sts	0x00B8, r24
+        TB_bufOut[2] = '0';
+     d50:	90 e3       	ldi	r25, 0x30	; 48
+     d52:	90 93 b9 00 	sts	0x00B9, r25
+        TB_bufOut[3] = '2';
+     d56:	22 e3       	ldi	r18, 0x32	; 50
+     d58:	20 93 ba 00 	sts	0x00BA, r18
+        TB_bufOut[4] = '1';
+     d5c:	80 93 bb 00 	sts	0x00BB, r24
+        TB_bufOut[5] = 'V';
+     d60:	36 e5       	ldi	r19, 0x56	; 86
+     d62:	30 93 bc 00 	sts	0x00BC, r19
+        TB_bufOut[6] = '1';
+     d66:	80 93 bd 00 	sts	0x00BD, r24
+        TB_bufOut[7] = '2';
+     d6a:	20 93 be 00 	sts	0x00BE, r18
+        TB_bufOut[8] = '0';
+     d6e:	90 93 bf 00 	sts	0x00BF, r25
+        TB_Send();
+     d72:	0e 94 1f 03 	call	0x63e	; 0x63e <TB_Send>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     d76:	80 e0       	ldi	r24, 0x00	; 0
+     d78:	16 c0       	rjmp	.+44     	; 0xda6 <__stack+0x547>
+        TB_bufOut[7] = '2';
+        TB_bufOut[8] = '0';
+        TB_Send();
+       } else {
+        // binary mode
+        TB_SendAck(TB_ERR_OK, (0x10203040));
+     d7a:	40 e4       	ldi	r20, 0x40	; 64
+     d7c:	50 e3       	ldi	r21, 0x30	; 48
+     d7e:	60 e2       	ldi	r22, 0x20	; 32
+     d80:	70 e1       	ldi	r23, 0x10	; 16
+     d82:	84 e6       	ldi	r24, 0x64	; 100
+     d84:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     d88:	80 e0       	ldi	r24, 0x00	; 0
+     d8a:	0d c0       	rjmp	.+26     	; 0xda6 <__stack+0x547>
+        // binary mode
+        TB_SendAck(TB_ERR_OK, (0x10203040));
+      };
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+     d8c:	40 e0       	ldi	r20, 0x00	; 0
+     d8e:	50 e0       	ldi	r21, 0x00	; 0
+     d90:	ba 01       	movw	r22, r20
+     d92:	82 e0       	ldi	r24, 0x02	; 2
+     d94:	0e 94 6f 03 	call	0x6de	; 0x6de <TB_SendAck>
+      return 0;
+     d98:	80 e0       	ldi	r24, 0x00	; 0
+     d9a:	05 c0       	rjmp	.+10     	; 0xda6 <__stack+0x547>
+    case TB_CMD_ROL:
+      TB_SendAck(TB_ERR_OK, 0);
+      return TB_CMD_ROL;
+      break;
+    case TB_CMD_MVP:
+      return TB_CMD_MVP;
+     d9c:	84 e0       	ldi	r24, 0x04	; 4
+     d9e:	03 c0       	rjmp	.+6      	; 0xda6 <__stack+0x547>
+					TB_SendAck(TB_ERR_TYPE, 0); // invalid value
+				#endif
+				break;
+			case 1:
+				#ifdef TB_SIO_BANK_1_IMPLEMENTED
+					return TB_CMD_SIO;
+     da0:	8e e0       	ldi	r24, 0x0E	; 14
+     da2:	01 c0       	rjmp	.+2      	; 0xda6 <__stack+0x547>
+      break;
+    default:
+      TB_SendAck(TB_ERR_COMMAND, 0); // invalid command
+      return 0;
+  }
+  return 0;
+     da4:	80 e0       	ldi	r24, 0x00	; 0
+}
+     da6:	0f 90       	pop	r0
+     da8:	df 91       	pop	r29
+     daa:	cf 91       	pop	r28
+     dac:	1f 91       	pop	r17
+     dae:	0f 91       	pop	r16
+     db0:	08 95       	ret
+
+00000db2 <uart_get_char>:
+  return 9;
+}
+
+inline byte uart_rx_empty(void)
+{
+  return (uart0_buf_rx_ptr_e == uart0_buf_rx_ptr_b);
+     db2:	90 91 83 00 	lds	r25, 0x0083
+     db6:	80 91 84 00 	lds	r24, 0x0084
+  // read     -> b++, read *b
+  // interrupt safe -> read *(b+1); b++
+  byte ptr;
+  byte res;
+  
+  if (uart_rx_empty()) return 0;
+     dba:	98 17       	cp	r25, r24
+     dbc:	61 f0       	breq	.+24     	; 0xdd6 <uart_get_char+0x24>
+
+  ptr = (uart0_buf_rx_ptr_b+1) & UART0_BUFFER_LINEAR_SIZE_MAX;
+     dbe:	90 91 84 00 	lds	r25, 0x0084
+     dc2:	9f 5f       	subi	r25, 0xFF	; 255
+     dc4:	9f 70       	andi	r25, 0x0F	; 15
+  res = uart0_buf_rx[ptr];
+     dc6:	e9 2f       	mov	r30, r25
+     dc8:	f0 e0       	ldi	r31, 0x00	; 0
+     dca:	e4 59       	subi	r30, 0x94	; 148
+     dcc:	fe 4f       	sbci	r31, 0xFE	; 254
+     dce:	80 81       	ld	r24, Z
+  uart0_buf_rx_ptr_b = ptr;
+     dd0:	90 93 84 00 	sts	0x0084, r25
+  return res;
+     dd4:	08 95       	ret
+  // read     -> b++, read *b
+  // interrupt safe -> read *(b+1); b++
+  byte ptr;
+  byte res;
+  
+  if (uart_rx_empty()) return 0;
+     dd6:	80 e0       	ldi	r24, 0x00	; 0
+  ptr = (uart0_buf_rx_ptr_b+1) & UART0_BUFFER_LINEAR_SIZE_MAX;
+  res = uart0_buf_rx[ptr];
+  uart0_buf_rx_ptr_b = ptr;
+  return res;
+  
+}
+     dd8:	08 95       	ret
+
+00000dda <uart_receive_char>:
+{
+  // write    -> e++, write *e
+  // interrupt safe -> write *(e+1); e++
+  byte ptr;
+
+  ptr = (uart0_buf_rx_ptr_e+1) & UART0_BUFFER_LINEAR_SIZE_MAX;
+     dda:	90 91 83 00 	lds	r25, 0x0083
+     dde:	9f 5f       	subi	r25, 0xFF	; 255
+     de0:	9f 70       	andi	r25, 0x0F	; 15
+  uart0_buf_rx[ptr] = dat;
+     de2:	e9 2f       	mov	r30, r25
+     de4:	f0 e0       	ldi	r31, 0x00	; 0
+     de6:	e4 59       	subi	r30, 0x94	; 148
+     de8:	fe 4f       	sbci	r31, 0xFE	; 254
+     dea:	80 83       	st	Z, r24
+  uart0_buf_rx_ptr_e = ptr;
+     dec:	90 93 83 00 	sts	0x0083, r25
+     df0:	08 95       	ret
+
+00000df2 <uart_send_char>:
+char uart_send_char(void)
+{
+  byte ptr;
+  byte res;
+
+  ptr = uart0_buf_tx_ptr;
+     df2:	90 91 82 00 	lds	r25, 0x0082
+  res = uart0_buf_tx[ptr];
+     df6:	e9 2f       	mov	r30, r25
+     df8:	f0 e0       	ldi	r31, 0x00	; 0
+     dfa:	ed 52       	subi	r30, 0x2D	; 45
+     dfc:	ff 4f       	sbci	r31, 0xFF	; 255
+     dfe:	80 81       	ld	r24, Z
+  uart0_buf_tx_ptr = ptr+1;
+     e00:	9f 5f       	subi	r25, 0xFF	; 255
+     e02:	90 93 82 00 	sts	0x0082, r25
+  return res;
+}
+     e06:	08 95       	ret
+
+00000e08 <uart_send>:
+/******************************************************/
+// start sending TX buffer
+/******************************************************/
+void uart_send(void)
+{
+  if (uart0_flags.txing == false) {
+     e08:	80 91 7b 00 	lds	r24, 0x007B
+     e0c:	80 fd       	sbrc	r24, 0
+     e0e:	0b c0       	rjmp	.+22     	; 0xe26 <uart_send+0x1e>
+    // is some data in buffer ?
+    uart0_flags.txing = true;
+     e10:	80 91 7b 00 	lds	r24, 0x007B
+     e14:	81 60       	ori	r24, 0x01	; 1
+     e16:	80 93 7b 00 	sts	0x007B, r24
+    //uart0_tx_timeout = UART0_TX_TIMEOUT;
+    UART0_TX_ENA;  // tx mode
+     e1a:	92 9a       	sbi	0x12, 2	; 18
+    uart0_buf_tx_ptr = 0; // send first byte from buffer
+     e1c:	10 92 82 00 	sts	0x0082, r1
+    UART0_PROC_UDR = uart_send_char();
+     e20:	0e 94 f9 06 	call	0xdf2	; 0xdf2 <uart_send_char>
+     e24:	8c b9       	out	0x0c, r24	; 12
+     e26:	08 95       	ret
+
+00000e28 <uart_interrupt_rx>:
+/******************************************************/
+// Enable/disable interrupts
+/******************************************************/
+void uart_interrupt_rx(byte enable)
+{
+  if (enable)
+     e28:	88 23       	and	r24, r24
+     e2a:	11 f0       	breq	.+4      	; 0xe30 <uart_interrupt_rx+0x8>
+    UART0_PROC_UCSRB |= BV(UART0_PROC_RXCIE);
+     e2c:	57 9a       	sbi	0x0a, 7	; 10
+     e2e:	08 95       	ret
+   else
+    UART0_PROC_UCSRB &= ~BV(UART0_PROC_RXCIE);
+     e30:	57 98       	cbi	0x0a, 7	; 10
+     e32:	08 95       	ret
+
+00000e34 <uart_interrupt_tx>:
+}
+
+void uart_interrupt_tx(byte enable)
+{
+  if (enable)
+     e34:	88 23       	and	r24, r24
+     e36:	11 f0       	breq	.+4      	; 0xe3c <uart_interrupt_tx+0x8>
+    UART0_PROC_UCSRB |= BV(UART0_PROC_TXCIE);
+     e38:	56 9a       	sbi	0x0a, 6	; 10
+     e3a:	08 95       	ret
+   else
+    UART0_PROC_UCSRB &= ~BV(UART0_PROC_TXCIE);
+     e3c:	56 98       	cbi	0x0a, 6	; 10
+     e3e:	08 95       	ret
+
+00000e40 <__vector_13>:
+
+/******************************************************/
+//
+/******************************************************/
+ISR(UART0_PROC_RX_vect)
+{
+     e40:	1f 92       	push	r1
+     e42:	0f 92       	push	r0
+     e44:	0f b6       	in	r0, 0x3f	; 63
+     e46:	0f 92       	push	r0
+     e48:	11 24       	eor	r1, r1
+     e4a:	2f 93       	push	r18
+     e4c:	3f 93       	push	r19
+     e4e:	4f 93       	push	r20
+     e50:	5f 93       	push	r21
+     e52:	6f 93       	push	r22
+     e54:	7f 93       	push	r23
+     e56:	8f 93       	push	r24
+     e58:	9f 93       	push	r25
+     e5a:	af 93       	push	r26
+     e5c:	bf 93       	push	r27
+     e5e:	ef 93       	push	r30
+     e60:	ff 93       	push	r31
+  byte tmpDat;
+  byte tmpStatus;
+  
+  uart0_rx_timeout = UART0_TIMEOUT;
+     e62:	85 e0       	ldi	r24, 0x05	; 5
+     e64:	80 93 7d 00 	sts	0x007D, r24
+  tmpStatus = UART0_PROC_UCSRA;
+     e68:	8b b1       	in	r24, 0x0b	; 11
+  uart0_status |= tmpStatus;
+     e6a:	90 91 7c 00 	lds	r25, 0x007C
+     e6e:	89 2b       	or	r24, r25
+     e70:	80 93 7c 00 	sts	0x007C, r24
+  tmpDat = UART0_PROC_UDR;
+     e74:	8c b1       	in	r24, 0x0c	; 12
+  uart_receive_char(tmpDat);
+     e76:	0e 94 ed 06 	call	0xdda	; 0xdda <uart_receive_char>
+}
+     e7a:	ff 91       	pop	r31
+     e7c:	ef 91       	pop	r30
+     e7e:	bf 91       	pop	r27
+     e80:	af 91       	pop	r26
+     e82:	9f 91       	pop	r25
+     e84:	8f 91       	pop	r24
+     e86:	7f 91       	pop	r23
+     e88:	6f 91       	pop	r22
+     e8a:	5f 91       	pop	r21
+     e8c:	4f 91       	pop	r20
+     e8e:	3f 91       	pop	r19
+     e90:	2f 91       	pop	r18
+     e92:	0f 90       	pop	r0
+     e94:	0f be       	out	0x3f, r0	; 63
+     e96:	0f 90       	pop	r0
+     e98:	1f 90       	pop	r1
+     e9a:	18 95       	reti
+
+00000e9c <__vector_15>:
+
+/******************************************************/
+//
+/******************************************************/
+ISR(UART0_PROC_TX_vect)
+{
+     e9c:	1f 92       	push	r1
+     e9e:	0f 92       	push	r0
+     ea0:	0f b6       	in	r0, 0x3f	; 63
+     ea2:	0f 92       	push	r0
+     ea4:	11 24       	eor	r1, r1
+     ea6:	2f 93       	push	r18
+     ea8:	3f 93       	push	r19
+     eaa:	4f 93       	push	r20
+     eac:	5f 93       	push	r21
+     eae:	6f 93       	push	r22
+     eb0:	7f 93       	push	r23
+     eb2:	8f 93       	push	r24
+     eb4:	9f 93       	push	r25
+     eb6:	af 93       	push	r26
+     eb8:	bf 93       	push	r27
+     eba:	ef 93       	push	r30
+     ebc:	ff 93       	push	r31
+  byte tmpDat;
+
+  // ???
+  if (uart0_flags.txing == false) return;
+     ebe:	80 91 7b 00 	lds	r24, 0x007B
+     ec2:	80 ff       	sbrs	r24, 0
+     ec4:	0e c0       	rjmp	.+28     	; 0xee2 <__vector_15+0x46>
+
+  // is next data in buffer?
+  if (uart0_buf_tx_ptr > 8) {
+     ec6:	80 91 82 00 	lds	r24, 0x0082
+     eca:	89 30       	cpi	r24, 0x09	; 9
+     ecc:	38 f0       	brcs	.+14     	; 0xedc <__vector_15+0x40>
+    // whole buffer was sended
+    uart0_flags.txing = FALSE;
+     ece:	80 91 7b 00 	lds	r24, 0x007B
+     ed2:	8e 7f       	andi	r24, 0xFE	; 254
+     ed4:	80 93 7b 00 	sts	0x007B, r24
+    // if whole packed was send, wait for response
+    //uart0_flags.wait_tx = TRUE;
+    UART0_TX_DIS;   // rx mode
+     ed8:	92 98       	cbi	0x12, 2	; 18
+    return;
+     eda:	03 c0       	rjmp	.+6      	; 0xee2 <__vector_15+0x46>
+  } else {
+    // send next byte
+    tmpDat = uart_send_char();
+     edc:	0e 94 f9 06 	call	0xdf2	; 0xdf2 <uart_send_char>
+    UART0_PROC_UDR = tmpDat;
+     ee0:	8c b9       	out	0x0c, r24	; 12
+  }
+}
+     ee2:	ff 91       	pop	r31
+     ee4:	ef 91       	pop	r30
+     ee6:	bf 91       	pop	r27
+     ee8:	af 91       	pop	r26
+     eea:	9f 91       	pop	r25
+     eec:	8f 91       	pop	r24
+     eee:	7f 91       	pop	r23
+     ef0:	6f 91       	pop	r22
+     ef2:	5f 91       	pop	r21
+     ef4:	4f 91       	pop	r20
+     ef6:	3f 91       	pop	r19
+     ef8:	2f 91       	pop	r18
+     efa:	0f 90       	pop	r0
+     efc:	0f be       	out	0x3f, r0	; 63
+     efe:	0f 90       	pop	r0
+     f00:	1f 90       	pop	r1
+     f02:	18 95       	reti
+
+00000f04 <uart0_init>:
+// Initialization
+void uart0_init(void)
+{
+  // UART port
+
+  UART0_PROC_UBRRL = (F_CPU / (16UL * UART0_DEFAULT_BAUD)) - 1;
+     f04:	87 e0       	ldi	r24, 0x07	; 7
+     f06:	89 b9       	out	0x09, r24	; 9
+
+  UART0_PROC_UCSRB |= BV(UART0_PROC_TXEN) | BV(UART0_PROC_RXEN); /* tx/rx enable */
+     f08:	8a b1       	in	r24, 0x0a	; 10
+     f0a:	88 61       	ori	r24, 0x18	; 24
+     f0c:	8a b9       	out	0x0a, r24	; 10
+
+  uart_interrupt_rx(true);
+     f0e:	81 e0       	ldi	r24, 0x01	; 1
+     f10:	0e 94 14 07 	call	0xe28	; 0xe28 <uart_interrupt_rx>
+  uart_interrupt_tx(true);
+     f14:	81 e0       	ldi	r24, 0x01	; 1
+     f16:	0e 94 1a 07 	call	0xe34	; 0xe34 <uart_interrupt_tx>
+  uart0_status = 0;
+     f1a:	10 92 7c 00 	sts	0x007C, r1
+     f1e:	08 95       	ret
+
+00000f20 <uart0_process>:
+}
+
+//----------------------------------------------------------
+// process internal logic
+void uart0_process(void)
+{
+     f20:	bf 92       	push	r11
+     f22:	cf 92       	push	r12
+     f24:	df 92       	push	r13
+     f26:	ef 92       	push	r14
+     f28:	ff 92       	push	r15
+     f2a:	0f 93       	push	r16
+     f2c:	1f 93       	push	r17
+     f2e:	cf 93       	push	r28
+     f30:	df 93       	push	r29
+  return ((uart0_buf_pac_rx_ptr_e - uart0_buf_pac_rx_ptr_b) & UART0_BUFFER_PACKET_SIZE_MAX);
+}
+
+inline byte uart_pac_tx_empty(void)
+{
+  return (uart0_buf_pac_tx_ptr_e == uart0_buf_pac_tx_ptr_b);
+     f32:	90 91 80 00 	lds	r25, 0x0080
+     f36:	80 91 81 00 	lds	r24, 0x0081
+  byte iptr;
+  byte sum;
+  byte *ptr;
+
+  // pøedává zpravy na odvysílání z paketového do lineárního bufferu
+  if (!uart_pac_tx_empty()) {
+     f3a:	98 17       	cp	r25, r24
+     f3c:	49 f1       	breq	.+82     	; 0xf90 <uart0_process+0x70>
+    // jsou data k odesláni ?
+    if ((!uart0_flags.txing)) {
+     f3e:	80 91 7b 00 	lds	r24, 0x007B
+     f42:	80 fd       	sbrc	r24, 0
+     f44:	25 c0       	rjmp	.+74     	; 0xf90 <uart0_process+0x70>
+      // nevysíláme ?
+      // zaèneme vysílat další zprávu
+      iptr = (uart0_buf_pac_tx_ptr_b+1) & UART0_BUFFER_PACKET_SIZE_MAX;
+     f46:	50 91 81 00 	lds	r21, 0x0081
+     f4a:	5f 5f       	subi	r21, 0xFF	; 255
+     f4c:	5f 70       	andi	r21, 0x0F	; 15
+      ptr = (byte *) &(uart0_buf_pac_tx[iptr].b[0]);
+     f4e:	85 2f       	mov	r24, r21
+     f50:	90 e0       	ldi	r25, 0x00	; 0
+     f52:	9c 01       	movw	r18, r24
+     f54:	22 0f       	add	r18, r18
+     f56:	33 1f       	adc	r19, r19
+     f58:	22 0f       	add	r18, r18
+     f5a:	33 1f       	adc	r19, r19
+     f5c:	22 0f       	add	r18, r18
+     f5e:	33 1f       	adc	r19, r19
+     f60:	82 0f       	add	r24, r18
+     f62:	93 1f       	adc	r25, r19
+     f64:	84 58       	subi	r24, 0x84	; 132
+     f66:	9e 4f       	sbci	r25, 0xFE	; 254
+     f68:	9c 01       	movw	r18, r24
+     f6a:	27 5f       	subi	r18, 0xF7	; 247
+     f6c:	3f 4f       	sbci	r19, 0xFF	; 255
+     f6e:	fc 01       	movw	r30, r24
+     f70:	df 01       	movw	r26, r30
+     f72:	a8 1b       	sub	r26, r24
+     f74:	b9 0b       	sbc	r27, r25
+      for (i=0; i<9; i++) {
+        uart0_buf_tx[i] = *ptr;
+     f76:	41 91       	ld	r20, Z+
+     f78:	ad 52       	subi	r26, 0x2D	; 45
+     f7a:	bf 4f       	sbci	r27, 0xFF	; 255
+     f7c:	4c 93       	st	X, r20
+    if ((!uart0_flags.txing)) {
+      // nevysíláme ?
+      // zaèneme vysílat další zprávu
+      iptr = (uart0_buf_pac_tx_ptr_b+1) & UART0_BUFFER_PACKET_SIZE_MAX;
+      ptr = (byte *) &(uart0_buf_pac_tx[iptr].b[0]);
+      for (i=0; i<9; i++) {
+     f7e:	e2 17       	cp	r30, r18
+     f80:	f3 07       	cpc	r31, r19
+     f82:	b1 f7       	brne	.-20     	; 0xf70 <uart0_process+0x50>
+        uart0_buf_tx[i] = *ptr;
+        ptr++;
+      }
+      uart0_buf_pac_tx_ptr_b = iptr;
+     f84:	50 93 81 00 	sts	0x0081, r21
+      uart0_buf_tx_ptr = 0;
+     f88:	10 92 82 00 	sts	0x0082, r1
+      uart_send();
+     f8c:	0e 94 04 07 	call	0xe08	; 0xe08 <uart_send>
+    }
+  }
+
+  // kontroluje pøijatá data
+  if ((!uart0_flags.data_received) && (uart_rx_size() > 8)) {
+     f90:	80 91 7b 00 	lds	r24, 0x007B
+     f94:	83 fd       	sbrc	r24, 3
+     f96:	4b c0       	rjmp	.+150    	; 0x102e <uart0_process+0x10e>
+/******************************************************/
+// Useful functions
+/******************************************************/
+inline byte uart_rx_size(void)
+{
+  return ((uart0_buf_rx_ptr_e - uart0_buf_rx_ptr_b) & UART0_BUFFER_LINEAR_SIZE_MAX);
+     f98:	80 91 83 00 	lds	r24, 0x0083
+     f9c:	90 91 84 00 	lds	r25, 0x0084
+     fa0:	89 1b       	sub	r24, r25
+     fa2:	8f 70       	andi	r24, 0x0F	; 15
+      uart_send();
+    }
+  }
+
+  // kontroluje pøijatá data
+  if ((!uart0_flags.data_received) && (uart_rx_size() > 8)) {
+     fa4:	89 30       	cpi	r24, 0x09	; 9
+     fa6:	08 f4       	brcc	.+2      	; 0xfaa <uart0_process+0x8a>
+     fa8:	42 c0       	rjmp	.+132    	; 0x102e <uart0_process+0x10e>
+    // máme alespoò 9 bytù dat a nejsou nezpracovaná data?
+
+
+    // zjístíme adresu volného místa v paketovém pøijímacm bufferu
+    iptr = (uart0_buf_pac_rx_ptr_e+1) & UART0_BUFFER_PACKET_SIZE_MAX;
+     faa:	b0 90 7e 00 	lds	r11, 0x007E
+     fae:	81 e0       	ldi	r24, 0x01	; 1
+     fb0:	8b 0d       	add	r24, r11
+     fb2:	8f 70       	andi	r24, 0x0F	; 15
+     fb4:	b8 2e       	mov	r11, r24
+    ptr = (byte *) &(uart0_buf_pac_rx[iptr].b[0]);
+     fb6:	e8 2e       	mov	r14, r24
+     fb8:	f1 2c       	mov	r15, r1
+     fba:	f7 01       	movw	r30, r14
+     fbc:	ee 0f       	add	r30, r30
+     fbe:	ff 1f       	adc	r31, r31
+     fc0:	ee 0f       	add	r30, r30
+     fc2:	ff 1f       	adc	r31, r31
+     fc4:	ee 0f       	add	r30, r30
+     fc6:	ff 1f       	adc	r31, r31
+     fc8:	ee 0d       	add	r30, r14
+     fca:	ff 1d       	adc	r31, r15
+     fcc:	cf 01       	movw	r24, r30
+     fce:	84 52       	subi	r24, 0x24	; 36
+     fd0:	9f 4f       	sbci	r25, 0xFF	; 255
+     fd2:	6c 01       	movw	r12, r24
+     fd4:	8c 01       	movw	r16, r24
+     fd6:	07 5f       	subi	r16, 0xF7	; 247
+     fd8:	1f 4f       	sbci	r17, 0xFF	; 255
+     fda:	ec 01       	movw	r28, r24
+
+    // pøedáme do paketového pøijímacího bufferu
+    for(i=0; i<9; i++) {
+      *ptr = uart_get_char();
+     fdc:	0e 94 d9 06 	call	0xdb2	; 0xdb2 <uart_get_char>
+     fe0:	89 93       	st	Y+, r24
+    // zjístíme adresu volného místa v paketovém pøijímacm bufferu
+    iptr = (uart0_buf_pac_rx_ptr_e+1) & UART0_BUFFER_PACKET_SIZE_MAX;
+    ptr = (byte *) &(uart0_buf_pac_rx[iptr].b[0]);
+
+    // pøedáme do paketového pøijímacího bufferu
+    for(i=0; i<9; i++) {
+     fe2:	c0 17       	cp	r28, r16
+     fe4:	d1 07       	cpc	r29, r17
+     fe6:	d1 f7       	brne	.-12     	; 0xfdc <uart0_process+0xbc>
+     fe8:	f6 01       	movw	r30, r12
+     fea:	90 e0       	ldi	r25, 0x00	; 0
+     fec:	80 e0       	ldi	r24, 0x00	; 0
+    }
+    
+    // odpovídá kontrolní souèet?
+    sum = 0;
+    for(i=0; i<8; i++) {
+      sum += uart0_buf_pac_rx[iptr].b[i];
+     fee:	21 91       	ld	r18, Z+
+     ff0:	92 0f       	add	r25, r18
+      //uart0_buf_pac_rx[0].b[i] = uart_get_char(); 
+    }
+    
+    // odpovídá kontrolní souèet?
+    sum = 0;
+    for(i=0; i<8; i++) {
+     ff2:	8f 5f       	subi	r24, 0xFF	; 255
+     ff4:	88 30       	cpi	r24, 0x08	; 8
+     ff6:	d9 f7       	brne	.-10     	; 0xfee <uart0_process+0xce>
+      sum += uart0_buf_pac_rx[iptr].b[i];
+    }
+    if (sum == uart0_buf_pac_rx[iptr].b[8]) {
+     ff8:	f7 01       	movw	r30, r14
+     ffa:	ee 0f       	add	r30, r30
+     ffc:	ff 1f       	adc	r31, r31
+     ffe:	ee 0f       	add	r30, r30
+    1000:	ff 1f       	adc	r31, r31
+    1002:	ee 0f       	add	r30, r30
+    1004:	ff 1f       	adc	r31, r31
+    1006:	ee 0d       	add	r30, r14
+    1008:	ff 1d       	adc	r31, r15
+    100a:	e4 52       	subi	r30, 0x24	; 36
+    100c:	ff 4f       	sbci	r31, 0xFF	; 255
+    100e:	80 85       	ldd	r24, Z+8	; 0x08
+    1010:	98 13       	cpse	r25, r24
+    1012:	08 c0       	rjmp	.+16     	; 0x1024 <uart0_process+0x104>
+      // souèet v poøádku
+      uart0_flags.data_received = TRUE; 
+    1014:	80 91 7b 00 	lds	r24, 0x007B
+    1018:	88 60       	ori	r24, 0x08	; 8
+    101a:	80 93 7b 00 	sts	0x007B, r24
+      uart0_buf_pac_rx_ptr_e = iptr;
+    101e:	b0 92 7e 00 	sts	0x007E, r11
+    1022:	05 c0       	rjmp	.+10     	; 0x102e <uart0_process+0x10e>
+
+     } else {
+      uart0_flags.data_receive_error = TRUE;
+    1024:	80 91 7b 00 	lds	r24, 0x007B
+    1028:	80 61       	ori	r24, 0x10	; 16
+    102a:	80 93 7b 00 	sts	0x007B, r24
+    }
+  }
+
+}
+    102e:	df 91       	pop	r29
+    1030:	cf 91       	pop	r28
+    1032:	1f 91       	pop	r17
+    1034:	0f 91       	pop	r16
+    1036:	ff 90       	pop	r15
+    1038:	ef 90       	pop	r14
+    103a:	df 90       	pop	r13
+    103c:	cf 90       	pop	r12
+    103e:	bf 90       	pop	r11
+    1040:	08 95       	ret
+
+00001042 <uart0_ISR_timer>:
+void uart0_ISR_timer(void)
+{
+  static byte uart0_rx_timeout_flag = 0;
+  
+  // smazání náhodnì pøijatých dat
+  if (uart0_rx_timeout > 0) {
+    1042:	80 91 7d 00 	lds	r24, 0x007D
+    1046:	88 23       	and	r24, r24
+    1048:	41 f0       	breq	.+16     	; 0x105a <uart0_ISR_timer+0x18>
+    uart0_rx_timeout--;
+    104a:	80 91 7d 00 	lds	r24, 0x007D
+    104e:	81 50       	subi	r24, 0x01	; 1
+    1050:	80 93 7d 00 	sts	0x007D, r24
+    uart0_rx_timeout_flag = false;
+    1054:	10 92 7a 00 	sts	0x007A, r1
+    1058:	08 95       	ret
+    } else {
+    if (!uart0_rx_timeout_flag) {
+    105a:	80 91 7a 00 	lds	r24, 0x007A
+    105e:	81 11       	cpse	r24, r1
+    1060:	07 c0       	rjmp	.+14     	; 0x1070 <uart0_ISR_timer+0x2e>
+      uart0_buf_rx_ptr_b = uart0_buf_rx_ptr_e;
+    1062:	80 91 83 00 	lds	r24, 0x0083
+    1066:	80 93 84 00 	sts	0x0084, r24
+      uart0_rx_timeout_flag = true;
+    106a:	81 e0       	ldi	r24, 0x01	; 1
+    106c:	80 93 7a 00 	sts	0x007A, r24
+    1070:	08 95       	ret
+
+00001072 <uart0_get_data_begin>:
+// must be called uart0_get_data_end() at end of handling data
+byte * uart0_get_data_begin(void)
+{
+  byte iptr;
+  
+  iptr = (uart0_buf_pac_rx_ptr_b+1) & UART0_BUFFER_PACKET_SIZE_MAX;
+    1072:	80 91 7f 00 	lds	r24, 0x007F
+    1076:	8f 5f       	subi	r24, 0xFF	; 255
+    1078:	8f 70       	andi	r24, 0x0F	; 15
+  return (byte *) &uart0_buf_pac_rx[iptr].b[0];
+    107a:	90 e0       	ldi	r25, 0x00	; 0
+    107c:	9c 01       	movw	r18, r24
+    107e:	22 0f       	add	r18, r18
+    1080:	33 1f       	adc	r19, r19
+    1082:	22 0f       	add	r18, r18
+    1084:	33 1f       	adc	r19, r19
+    1086:	22 0f       	add	r18, r18
+    1088:	33 1f       	adc	r19, r19
+    108a:	82 0f       	add	r24, r18
+    108c:	93 1f       	adc	r25, r19
+}
+    108e:	84 52       	subi	r24, 0x24	; 36
+    1090:	9f 4f       	sbci	r25, 0xFF	; 255
+    1092:	08 95       	ret
+
+00001094 <uart0_get_data_end>:
+// must be called after uart0_get_data_begin()
+byte uart0_get_data_end(void)
+{
+  byte i;
+  
+  i = (uart0_buf_pac_rx_ptr_b+1) & UART0_BUFFER_PACKET_SIZE_MAX;
+    1094:	80 91 7f 00 	lds	r24, 0x007F
+    1098:	8f 5f       	subi	r24, 0xFF	; 255
+    109a:	8f 70       	andi	r24, 0x0F	; 15
+  uart0_buf_pac_rx_ptr_b = i;
+    109c:	80 93 7f 00 	sts	0x007F, r24
+  return (uart0_buf_pac_rx_ptr_e == uart0_buf_pac_rx_ptr_b);
+}
+
+inline byte uart_pac_rx_size(void)
+{
+  return ((uart0_buf_pac_rx_ptr_e - uart0_buf_pac_rx_ptr_b) & UART0_BUFFER_PACKET_SIZE_MAX);
+    10a0:	80 91 7e 00 	lds	r24, 0x007E
+    10a4:	90 91 7f 00 	lds	r25, 0x007F
+    10a8:	89 1b       	sub	r24, r25
+    10aa:	8f 70       	andi	r24, 0x0F	; 15
+  
+  i = (uart0_buf_pac_rx_ptr_b+1) & UART0_BUFFER_PACKET_SIZE_MAX;
+  uart0_buf_pac_rx_ptr_b = i;
+  
+  i = uart_pac_rx_size();
+  if (i == 0) {
+    10ac:	29 f4       	brne	.+10     	; 0x10b8 <uart0_get_data_end+0x24>
+    uart0_flags.data_received = FALSE;
+    10ae:	90 91 7b 00 	lds	r25, 0x007B
+    10b2:	97 7f       	andi	r25, 0xF7	; 247
+    10b4:	90 93 7b 00 	sts	0x007B, r25
+  }
+  return i;
+}
+    10b8:	08 95       	ret
+
+000010ba <uart0_put_data>:
+
+
+//----------------------------------------------------------
+// send packet pointed by dataptr
+void uart0_put_data(byte * dataptr)
+{
+    10ba:	fc 01       	movw	r30, r24
+  byte i;
+  byte iptr;
+  byte sum;
+
+  iptr = (uart0_buf_pac_tx_ptr_e+1) & UART0_BUFFER_PACKET_SIZE_MAX;
+    10bc:	50 91 80 00 	lds	r21, 0x0080
+    10c0:	5f 5f       	subi	r21, 0xFF	; 255
+    10c2:	5f 70       	andi	r21, 0x0F	; 15
+
+  sum = 0;
+  // copy data with sum
+  for(i=0; i<8; i++) {
+    uart0_buf_pac_tx[iptr].b[i] = *dataptr;
+    10c4:	85 2f       	mov	r24, r21
+    10c6:	90 e0       	ldi	r25, 0x00	; 0
+    10c8:	dc 01       	movw	r26, r24
+    10ca:	aa 0f       	add	r26, r26
+    10cc:	bb 1f       	adc	r27, r27
+    10ce:	aa 0f       	add	r26, r26
+    10d0:	bb 1f       	adc	r27, r27
+    10d2:	aa 0f       	add	r26, r26
+    10d4:	bb 1f       	adc	r27, r27
+    10d6:	a8 0f       	add	r26, r24
+    10d8:	b9 1f       	adc	r27, r25
+    10da:	a4 58       	subi	r26, 0x84	; 132
+    10dc:	be 4f       	sbci	r27, 0xFE	; 254
+  byte iptr;
+  byte sum;
+
+  iptr = (uart0_buf_pac_tx_ptr_e+1) & UART0_BUFFER_PACKET_SIZE_MAX;
+
+  sum = 0;
+    10de:	30 e0       	ldi	r19, 0x00	; 0
+  // copy data with sum
+  for(i=0; i<8; i++) {
+    10e0:	20 e0       	ldi	r18, 0x00	; 0
+    uart0_buf_pac_tx[iptr].b[i] = *dataptr;
+    10e2:	40 81       	ld	r20, Z
+    10e4:	4d 93       	st	X+, r20
+    sum += *dataptr;
+    10e6:	41 91       	ld	r20, Z+
+    10e8:	34 0f       	add	r19, r20
+
+  iptr = (uart0_buf_pac_tx_ptr_e+1) & UART0_BUFFER_PACKET_SIZE_MAX;
+
+  sum = 0;
+  // copy data with sum
+  for(i=0; i<8; i++) {
+    10ea:	2f 5f       	subi	r18, 0xFF	; 255
+    10ec:	28 30       	cpi	r18, 0x08	; 8
+    10ee:	c9 f7       	brne	.-14     	; 0x10e2 <uart0_put_data+0x28>
+    uart0_buf_pac_tx[iptr].b[i] = *dataptr;
+    sum += *dataptr;
+    dataptr++;
+  }
+  uart0_buf_pac_tx[iptr].n.sum = sum; // save calculated sum
+    10f0:	fc 01       	movw	r30, r24
+    10f2:	ee 0f       	add	r30, r30
+    10f4:	ff 1f       	adc	r31, r31
+    10f6:	ee 0f       	add	r30, r30
+    10f8:	ff 1f       	adc	r31, r31
+    10fa:	ee 0f       	add	r30, r30
+    10fc:	ff 1f       	adc	r31, r31
+    10fe:	8e 0f       	add	r24, r30
+    1100:	9f 1f       	adc	r25, r31
+    1102:	fc 01       	movw	r30, r24
+    1104:	e4 58       	subi	r30, 0x84	; 132
+    1106:	fe 4f       	sbci	r31, 0xFE	; 254
+    1108:	30 87       	std	Z+8, r19	; 0x08
+
+  uart0_buf_pac_tx_ptr_e = iptr;
+    110a:	50 93 80 00 	sts	0x0080, r21
+    110e:	08 95       	ret
+
+00001110 <uart0_set_baud>:
+// Set from default baud rates
+#define MACRO_BAUDRATE(BAUDRATE) (UART0_PROC_UBRRL = (F_CPU / (16UL * BAUDRATE)) - 1)
+void uart0_set_baud(byte baud)
+{
+  // UART port
+  switch (baud) {
+    1110:	90 e0       	ldi	r25, 0x00	; 0
+    1112:	8b 30       	cpi	r24, 0x0B	; 11
+    1114:	91 05       	cpc	r25, r1
+    1116:	28 f5       	brcc	.+74     	; 0x1162 <uart0_set_baud+0x52>
+    1118:	fc 01       	movw	r30, r24
+    111a:	e4 53       	subi	r30, 0x34	; 52
+    111c:	ff 4f       	sbci	r31, 0xFF	; 255
+    111e:	0c 94 b4 08 	jmp	0x1168	; 0x1168 <__tablejump2__>
+    case 0:  
+      MACRO_BAUDRATE(9600);
+    1122:	8f e5       	ldi	r24, 0x5F	; 95
+    1124:	89 b9       	out	0x09, r24	; 9
+      break;
+    1126:	08 95       	ret
+    case 1:  
+      MACRO_BAUDRATE(14400);
+    1128:	8f e3       	ldi	r24, 0x3F	; 63
+    112a:	89 b9       	out	0x09, r24	; 9
+      break;
+    112c:	08 95       	ret
+    case 2:  
+      MACRO_BAUDRATE(19200);
+    112e:	8f e2       	ldi	r24, 0x2F	; 47
+    1130:	89 b9       	out	0x09, r24	; 9
+      break;
+    1132:	08 95       	ret
+    case 3:  
+      MACRO_BAUDRATE(28800);
+    1134:	8f e1       	ldi	r24, 0x1F	; 31
+    1136:	89 b9       	out	0x09, r24	; 9
+      break;
+    1138:	08 95       	ret
+    case 4:  
+      MACRO_BAUDRATE(38400);
+    113a:	87 e1       	ldi	r24, 0x17	; 23
+    113c:	89 b9       	out	0x09, r24	; 9
+      break;
+    113e:	08 95       	ret
+    case 5:  
+      MACRO_BAUDRATE(57600);
+    1140:	8f e0       	ldi	r24, 0x0F	; 15
+    1142:	89 b9       	out	0x09, r24	; 9
+      break;
+    1144:	08 95       	ret
+    case 6:  
+      MACRO_BAUDRATE(76800);
+    1146:	8b e0       	ldi	r24, 0x0B	; 11
+    1148:	89 b9       	out	0x09, r24	; 9
+      break;
+    114a:	08 95       	ret
+    case 7:  
+      MACRO_BAUDRATE(115200);
+    114c:	87 e0       	ldi	r24, 0x07	; 7
+    114e:	89 b9       	out	0x09, r24	; 9
+      break;
+    1150:	08 95       	ret
+    case 8:  
+      MACRO_BAUDRATE(230400);
+    1152:	83 e0       	ldi	r24, 0x03	; 3
+    1154:	89 b9       	out	0x09, r24	; 9
+      break;
+    1156:	08 95       	ret
+    case 9:  
+      MACRO_BAUDRATE(250000);
+    1158:	82 e0       	ldi	r24, 0x02	; 2
+    115a:	89 b9       	out	0x09, r24	; 9
+      break;
+    115c:	08 95       	ret
+    case 10:  
+      MACRO_BAUDRATE(500000);
+    115e:	19 b8       	out	0x09, r1	; 9
+      break;
+    1160:	08 95       	ret
+    default:  
+      MACRO_BAUDRATE(19200);
+    1162:	8f e2       	ldi	r24, 0x2F	; 47
+    1164:	89 b9       	out	0x09, r24	; 9
+    1166:	08 95       	ret
+
+00001168 <__tablejump2__>:
+    1168:	ee 0f       	add	r30, r30
+    116a:	ff 1f       	adc	r31, r31
+
+0000116c <__tablejump__>:
+    116c:	05 90       	lpm	r0, Z+
+    116e:	f4 91       	lpm	r31, Z
+    1170:	e0 2d       	mov	r30, r0
+    1172:	09 94       	ijmp
+
+00001174 <__eerd_block_m32>:
+    1174:	dc 01       	movw	r26, r24
+    1176:	cb 01       	movw	r24, r22
+
+00001178 <__eerd_blraw_m32>:
+    1178:	fc 01       	movw	r30, r24
+    117a:	e1 99       	sbic	0x1c, 1	; 28
+    117c:	fe cf       	rjmp	.-4      	; 0x117a <__eerd_blraw_m32+0x2>
+    117e:	06 c0       	rjmp	.+12     	; 0x118c <__eerd_blraw_m32+0x14>
+    1180:	ff bb       	out	0x1f, r31	; 31
+    1182:	ee bb       	out	0x1e, r30	; 30
+    1184:	e0 9a       	sbi	0x1c, 0	; 28
+    1186:	31 96       	adiw	r30, 0x01	; 1
+    1188:	0d b2       	in	r0, 0x1d	; 29
+    118a:	0d 92       	st	X+, r0
+    118c:	41 50       	subi	r20, 0x01	; 1
+    118e:	50 40       	sbci	r21, 0x00	; 0
+    1190:	b8 f7       	brcc	.-18     	; 0x1180 <__eerd_blraw_m32+0x8>
+    1192:	08 95       	ret
+
+00001194 <__eeupd_byte_m32>:
+    1194:	26 2f       	mov	r18, r22
+
+00001196 <__eeupd_r18_m32>:
+    1196:	e1 99       	sbic	0x1c, 1	; 28
+    1198:	fe cf       	rjmp	.-4      	; 0x1196 <__eeupd_r18_m32>
+    119a:	9f bb       	out	0x1f, r25	; 31
+    119c:	8e bb       	out	0x1e, r24	; 30
+    119e:	e0 9a       	sbi	0x1c, 0	; 28
+    11a0:	01 97       	sbiw	r24, 0x01	; 1
+    11a2:	0d b2       	in	r0, 0x1d	; 29
+    11a4:	02 16       	cp	r0, r18
+    11a6:	31 f0       	breq	.+12     	; 0x11b4 <__eeupd_r18_m32+0x1e>
+    11a8:	2d bb       	out	0x1d, r18	; 29
+    11aa:	0f b6       	in	r0, 0x3f	; 63
+    11ac:	f8 94       	cli
+    11ae:	e2 9a       	sbi	0x1c, 2	; 28
+    11b0:	e1 9a       	sbi	0x1c, 1	; 28
+    11b2:	0f be       	out	0x3f, r0	; 63
+    11b4:	08 95       	ret
+
+000011b6 <__eewr_block_m32>:
+    11b6:	dc 01       	movw	r26, r24
+    11b8:	cb 01       	movw	r24, r22
+    11ba:	03 c0       	rjmp	.+6      	; 0x11c2 <__eewr_block_m32+0xc>
+    11bc:	2d 91       	ld	r18, X+
+    11be:	0e 94 e6 08 	call	0x11cc	; 0x11cc <__eewr_r18_m32>
+    11c2:	41 50       	subi	r20, 0x01	; 1
+    11c4:	50 40       	sbci	r21, 0x00	; 0
+    11c6:	d0 f7       	brcc	.-12     	; 0x11bc <__eewr_block_m32+0x6>
+    11c8:	08 95       	ret
+
+000011ca <__eewr_byte_m32>:
+    11ca:	26 2f       	mov	r18, r22
+
+000011cc <__eewr_r18_m32>:
+    11cc:	e1 99       	sbic	0x1c, 1	; 28
+    11ce:	fe cf       	rjmp	.-4      	; 0x11cc <__eewr_r18_m32>
+    11d0:	9f bb       	out	0x1f, r25	; 31
+    11d2:	8e bb       	out	0x1e, r24	; 30
+    11d4:	2d bb       	out	0x1d, r18	; 29
+    11d6:	0f b6       	in	r0, 0x3f	; 63
+    11d8:	f8 94       	cli
+    11da:	e2 9a       	sbi	0x1c, 2	; 28
+    11dc:	e1 9a       	sbi	0x1c, 1	; 28
+    11de:	0f be       	out	0x3f, r0	; 63
+    11e0:	01 96       	adiw	r24, 0x01	; 1
+    11e2:	08 95       	ret
+
+000011e4 <_exit>:
+    11e4:	f8 94       	cli
+
+000011e6 <__stop_program>:
+    11e6:	ff cf       	rjmp	.-2      	; 0x11e6 <__stop_program>
