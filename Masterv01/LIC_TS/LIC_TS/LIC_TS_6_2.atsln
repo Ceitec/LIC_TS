@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "LIC_TS", "LIC_TS\LIC_TS_6_2.cproj", "{0FC13BD0-C2F1-4B73-8FA9-1552497077FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FC13BD0-C2F1-4B73-8FA9-1552497077FB}.Debug|AVR.ActiveCfg = Debug|AVR
+		{0FC13BD0-C2F1-4B73-8FA9-1552497077FB}.Debug|AVR.Build.0 = Debug|AVR
+		{0FC13BD0-C2F1-4B73-8FA9-1552497077FB}.Release|AVR.ActiveCfg = Release|AVR
+		{0FC13BD0-C2F1-4B73-8FA9-1552497077FB}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
