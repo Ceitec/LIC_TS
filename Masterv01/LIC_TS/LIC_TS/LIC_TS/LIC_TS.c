@@ -155,6 +155,7 @@ void try_receive_data(void)
 						//Odeslání dat po I2C do slave podle bufferu kterému chcee co poslat.
 						while(((Vraceno = handleI2C_Receive(TB_bufIn[TB_BUF_MOTOR])) == 0))
 						{
+							
 						}
 						long int Hodnota=0;
 						Hodnota = recv[0];
